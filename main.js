@@ -26,21 +26,32 @@ function initDemo() {
     
     if (!demoSteps.length) return;
     
+    let autoProgressTimer = null;
+    
     // 다음 단계 버튼 이벤트 리스너
-    nextButtons.forEach(button => {
+    nextButtons.forEach((button, buttonIndex) => {
         button.addEventListener('click', function() {
+            // 비활성화된 버튼 클릭 방지
+            if (button.disabled) return;
+            
             // 현재 활성화된 단계 찾기
             const activeStep = document.querySelector('.demo-step.active');
             const currentIndex = Array.from(demoSteps).indexOf(activeStep);
+            
+            // 자동 진행 타이머 정리
+            if (autoProgressTimer) {
+                clearTimeout(autoProgressTimer);
+                autoProgressTimer = null;
+            }
             
             // 다음 단계로 이동
             if (currentIndex < demoSteps.length - 1) {
                 activeStep.classList.remove('active');
                 demoSteps[currentIndex + 1].classList.add('active');
                 
-                // 로딩 애니메이션 (2단계에서만)
+                // AI 분석 단계(2단계)에서 자동 진행 시작
                 if (currentIndex + 1 === 1) {
-                    simulateLoading();
+                    startAIAnalysis();
                 }
             }
         });
@@ -49,38 +60,105 @@ function initDemo() {
     // 처음으로 버튼 이벤트 리스너
     if (restartButton) {
         restartButton.addEventListener('click', function() {
+            // 자동 진행 타이머 정리
+            if (autoProgressTimer) {
+                clearTimeout(autoProgressTimer);
+                autoProgressTimer = null;
+            }
+            
+            // 모든 단계 리셋
             demoSteps.forEach(step => step.classList.remove('active'));
             demoSteps[0].classList.add('active');
+            
+            // 버튼 상태 리셋
+            nextButtons.forEach(btn => {
+                btn.disabled = false;
+                btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                btn.textContent = btn.getAttribute('data-original-text') || btn.textContent;
+            });
         });
     }
-}
-
-/**
- * 로딩 애니메이션 시뮬레이션
- */
-function simulateLoading() {
-    const loadingBar = document.querySelector('.loading-bar');
-    if (!loadingBar) return;
     
-    // 로딩 애니메이션 리셋
-    loadingBar.style.width = '0%';
+    // 버튼 원본 텍스트 저장
+    nextButtons.forEach(btn => {
+        if (!btn.getAttribute('data-original-text')) {
+            btn.setAttribute('data-original-text', btn.textContent);
+        }
+    });
     
-    // 로딩 애니메이션 시작
-    setTimeout(() => {
-        loadingBar.style.width = '30%';
+    // AI 분석 프로세스 시작
+    function startAIAnalysis() {
+        const analysisText = document.getElementById('analysis-text');
+        const countdownElement = document.getElementById('countdown');
+        const countdownText = document.getElementById('countdown-text');
+        const loadingBar = document.querySelector('.loading-bar');
+        const step2Button = document.querySelector('#step2 .demo-next');
         
-        setTimeout(() => {
-            loadingBar.style.width = '60%';
-            
+        let countdown = 4;
+        let currentPhase = 0;
+        
+        const analysisPhases = [
+            "창업 분야 및 역량을 분석하고 있습니다...",
+            "유사 성공 사례 데이터를 검토하고 있습니다...",
+            "최적 지원 프로그램을 매칭하고 있습니다...",
+            "개인화된 추천 결과를 생성하고 있습니다..."
+        ];
+        
+        // 로딩 바 애니메이션 시작
+        if (loadingBar) {
+            loadingBar.style.width = '0%';
+            loadingBar.style.transition = 'width 4s linear';
             setTimeout(() => {
-                loadingBar.style.width = '90%';
+                loadingBar.style.width = '100%';
+            }, 100);
+        }
+        
+        // 카운트다운 및 분석 텍스트 업데이트
+        const updateAnalysis = () => {
+            if (countdownElement) {
+                countdownElement.textContent = countdown;
+            }
+            
+            if (analysisText && currentPhase < analysisPhases.length) {
+                analysisText.textContent = analysisPhases[currentPhase];
+                currentPhase++;
+            }
+            
+            countdown--;
+            
+            if (countdown >= 0) {
+                setTimeout(updateAnalysis, 1000);
+            } else {
+                // 분석 완료 - 3단계로 자동 이동
+                completeAnalysis();
+            }
+        };
+        
+        // 분석 완료 처리
+        function completeAnalysis() {
+            if (analysisText) {
+                analysisText.textContent = "분석이 완료되었습니다! 결과를 확인하세요.";
+            }
+            
+            if (countdownText) {
+                countdownText.innerHTML = '<span class="text-green-600 font-bold">✓ 분석 완료!</span>';
+            }
+            
+            // 잠시 후 3단계로 이동
+            autoProgressTimer = setTimeout(() => {
+                const step2 = document.getElementById('step2');
+                const step3 = document.getElementById('step3');
                 
-                setTimeout(() => {
-                    loadingBar.style.width = '100%';
-                }, 500);
-            }, 700);
-        }, 600);
-    }, 300);
+                if (step2 && step3) {
+                    step2.classList.remove('active');
+                    step3.classList.add('active');
+                }
+            }, 1000);
+        }
+        
+        // 분석 시작
+        setTimeout(updateAnalysis, 500);
+    }
 }
 
 /**
