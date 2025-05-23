@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현황 및 문제점 - 울산 창업 원스톱 디지털 플랫폼</title>
+    <meta name="description" content="울산 창업 생태계의 현황과 기존 창업 지원 체계의 문제점 분석">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="font-noto bg-gray-50 text-gray-800">
+    <!-- 헤더 섹션 -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="img/logo.jpg" alt="울산시 로고" class="h-10 mr-3">
+                <div>
+                    <h1 class="text-2xl font-bold">울산 창업 원스톱 디지털 플랫폼</h1>
+                    <p class="text-blue-100">울산광역시 규제개혁 아이디어 공모전</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-end">
+                <a href="index.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">홈</a>
+                <a href="current-state.html" class="px-3 py-2 font-medium bg-blue-600 rounded transition">현황 및 문제점</a>
+                <a href="improvement.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">개선 방안</a>
+                <a href="expected-effects.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">기대 효과</a>
+                <a href="feasibility.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">실현가능성</a>
+                <a href="trend-analysis.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">트렌드 분석</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 페이지 제목 섹션 -->
+    <section class="bg-blue-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">현황 및 문제점</h2>
+            <p class="text-xl opacity-90">울산 창업 생태계의 현황과 기존 창업 지원 체계의 문제점을 분석합니다.</p>
+        </div>
+    </section>
+
+    <!-- 울산 창업 생태계 현황 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">1. 울산 창업 생태계 현황</h2>
+            
+            <!-- 긍정적 지표 -->
+            <div class="bg-blue-50 p-8 rounded-lg shadow-lg mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-blue-700">긍정적 지표</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="stat-card bg-white shadow-md hover:shadow-lg">
+                        <div class="icon-circle bg-blue-100 text-blue-700 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                            </svg>
+                        </div>
+                        <p class="text-center font-bold text-2xl mb-1 text-blue-700">8%</p>
+                        <p class="text-center">기술기반업종 창업기업 수</p>
+                        <p class="text-center text-sm text-gray-500">전년 대비 증가율 (2023년)</p>
+                    </div>
+                    
+                    <div class="stat-card bg-white shadow-md hover:shadow-lg">
+                        <div class="icon-circle bg-blue-100 text-blue-700 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-center font-bold text-2xl mb-1 text-blue-700">52%</p>
+                        <p class="text-center">벤처확인기업 평균매출액</p>
+                        <p class="text-center text-sm text-gray-500">2021년 대비 2023년 증가율</p>
+                    </div>
+                    
+                    <div class="stat-card bg-white shadow-md hover:shadow-lg">
+                        <div class="icon-circle bg-blue-100 text-blue-700 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-center font-bold text-2xl mb-1 text-blue-700">82%</p>
+                        <p class="text-center">창업·벤처 펀드 규모</p>
+                        <p class="text-center text-sm text-gray-500">2021년(1,040억원) → 2023년(1,890억원)</p>
+                    </div>
+                    
+                    <div class="stat-card bg-white shadow-md hover:shadow-lg">
+                        <div class="icon-circle bg-blue-100 text-blue-700 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <p class="text-center font-bold text-2xl mb-1 text-blue-700">800%</p>
+                        <p class="text-center">TIPS 선정기업 투자금액</p>
+                        <p class="text-center text-sm text-gray-500">2021년(2억원) → 2023년(18억원)</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4">울산의 창업 생태계는 최근 3년간 꾸준한 성장세를 보이고 있습니다. 특히 2023년에는 전국적으로 코로나19 이후 창업 감소세에도 불구하고, 울산은 <span class="font-semibold">기술기반업종 창업기업 수가 전년 대비 8% 증가</span>하는 성과를 보였습니다.</p>
+                    <p class="mb-4">벤처확인기업의 평균매출액은 2021년 대비 2023년에 <span class="font-semibold">52% 증가</span>했으며, 창업·벤처 펀드 규모도 1,040억원에서 1,890억원으로 <span class="font-semibold">82% 증가</span>했습니다.</p>
+                    <p class="mb-0">특히 주목할 만한 성과는 TIPS(Tech Incubator Program for Startup) 선정기업의 투자금액이 2021년 2억원에서 2023년 18억원으로 <span class="font-semibold">800% 증가</span>한 점으로, 울산 창업 생태계의 질적 성장을 보여주고 있습니다.</p>
+                </div>
+            </div>
+            
+            <!-- 산업 구조적 특징 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6">울산의 산업 구조적 특징</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-4 text-blue-700">주력산업</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">석유화학</h5>
+                                    <p class="text-gray-700">현대오일뱅크 중심의 광범위한 석유화학 생태계</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">자동차</h5>
+                                    <p class="text-gray-700">현대자동차를 중심으로 한 자동차 산업 클러스터</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">조선</h5>
+                                    <p class="text-gray-700">현대중공업 중심의 글로벌 조선 산업 허브</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-4 text-green-600">신성장 산업</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">이차전지</h5>
+                                    <p class="text-gray-700">친환경 에너지 저장 기술의 핵심 산업</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">수소에너지</h5>
+                                    <p class="text-gray-700">친환경 수소 에너지 생산 및 활용 기술</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">스마트 조선·해양</h5>
+                                    <p class="text-gray-700">AI 및 디지털 기술 기반 스마트 선박 건조</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">미래 모빌리티</h5>
+                                    <p class="text-gray-700">자율주행, 전기차 등 미래 이동수단 기술</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 산업단지 정보 -->
+                <div class="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-bold mb-4">산업단지</h4>
+                    <p class="mb-4">울산은 대규모 산업 인프라를 갖추고 있으며, 특히 <span class="font-semibold">울산미포국가산업단지</span>와 <span class="font-semibold">온산국가산업단지</span> 등 국가산업단지를 중심으로 제조업 중심의 강력한 산업 생태계를 형성하고 있습니다.</p>
+                    
+                    <div class="relative h-64 mt-6">
+                        <img src="img/encryptGetImage.jfif" alt="울산 산업단지 지도" class="absolute inset-0 w-full h-full object-cover rounded-lg"> 
+                    </div>
+출처: 울산산업단지
+                </div>
+            </div>
+            
+            <!-- 생태계 시각화 차트 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">울산 창업 생태계 시각화</h3>
+                <div class="h-80">
+                    <canvas id="startupEcosystemChart"></canvas>
+                </div>
+                <p class="text-sm text-gray-500 mt-4 text-center">* 2021-2023년 울산 창업 생태계 주요 지표 변화</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기존 창업 지원 체계의 문제점 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">2. 기존 창업 지원 체계의 문제점</h2>
+            
+            <!-- 문제점 1: 정보 분산 및 중복 신청 문제 -->
+            <div class="mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row items-start mb-6">
+                        <div class="bg-red-100 text-red-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-red-600">정보 분산 및 중복 신청 문제</h3>
+                            <p class="text-gray-700 mb-4">창업자들은 여러 기관을 방문하며 동일한 서류를 반복적으로 제출해야 하고, 여러 번의 중복된 심사를 받아야 합니다.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 현장 사례 카드 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-500">
+                            <h4 class="font-bold text-lg mb-2">현장 사례 1</h4>
+                            <p class="italic text-gray-700">"A씨는 스마트팩토리 창업을 위해 울산창조경제혁신센터, 울산경제일자리진흥원, 중소벤처기업진흥공단 울산지역본부, 테크노파크 등 총 7개 기관을 방문해야 했습니다. 각 기관마다 유사한 서류를 반복 제출하고, 동일한 심사를 3번 받았습니다."</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-500">
+                            <h4 class="font-bold text-lg mb-2">현장 사례 2</h4>
+                            <p class="italic text-gray-700">"B기업은 창업 후 1년차에 정부지원사업 3개에 동시 지원했지만, 각각 다른 시스템으로 신청해야 해서 총 60여 장의 서류를 작성했습니다. 결과적으로 1개 사업만 선정되었지만 나머지 2개 사업의 중복 신청으로 인한 시간 낭비가 컸습니다."</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 정보 분산 다이어그램 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-4">현행 창업 지원 체계 구조</h4>
+                        <div class="relative">
+                            <img src="img/support_system_structure.svg" alt="창업 지원 체계 분산 구조도" class="w-full h-auto rounded-lg shadow">
+                            <div class="absolute top-4 left-4 bg-white bg-opacity-75 p-2 rounded-lg">
+                                <p class="text-sm font-semibold text-gray-800">울산 지역 내 창업 지원 기관들의 분산 구조</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 문제점 2: 정보 접근성 한계 -->
+            <div class="mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row items-start mb-6">
+                        <div class="bg-yellow-100 text-yellow-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-yellow-600">정보 접근성 한계</h3>
+                            <p class="text-gray-700 mb-4">각 기관별로 자체 사업만 안내하고 있어 창업자들은 타 기관의 연계 정보를 파악하기 어렵습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 정보 접근성 문제 세부 내용 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <div class="bg-yellow-100 text-yellow-700 w-10 h-10 flex items-center justify-center rounded-full mb-3 mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                                </svg>
+                            </div>
+                            <h4 class="text-center font-bold mb-2">단편적 정보 제공</h4>
+                            <p class="text-sm text-gray-700 text-center">각 기관별로 자체 사업만 안내, 타 기관 연계 정보 부족</p>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <div class="bg-yellow-100 text-yellow-700 w-10 h-10 flex items-center justify-center rounded-full mb-3 mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-center font-bold mb-2">수동적 서비스</h4>
+                            <p class="text-sm text-gray-700 text-center">창업자가 직접 찾아야 하는 구조, 맞춤형 안내 부재</p>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <div class="bg-yellow-100 text-yellow-700 w-10 h-10 flex items-center justify-center rounded-full mb-3 mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-center font-bold mb-2">시의성 부족</h4>
+                            <p class="text-sm text-gray-700 text-center">정보 업데이트 지연, 마감일 임박 공지 등</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 사용자 경험 그래프 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-4">창업자 정보 접근 여정 분석</h4>
+                        <div class="relative">
+                            <img src="img/startup_journey_map.svg" alt="창업자 정보 접근 여정 맵" class="w-full h-auto rounded-lg shadow">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-3">창업자들이 필요한 정보를 얻기까지 겪게 되는 복잡한 과정을 나타낸 여정 맵 다이어그램</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 문제점 3: 행정 절차의 복잡성 -->
+            <div class="mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row items-start mb-6">
+                        <div class="bg-orange-100 text-orange-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-orange-600">행정 절차의 복잡성</h3>
+                            <p class="text-gray-700 mb-4">창업 관련 인허가와 지원 절차가 복잡하고 처리 기간이 길어 창업자들에게 큰 부담이 됩니다.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 행정 절차 복잡성 통계 -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                        <div class="p-5 bg-orange-50 rounded-lg text-center">
+                            <div class="text-orange-600 font-bold text-3xl mb-2">30일</div>
+                            <p class="text-gray-700 text-sm">창업 관련 인허가<br>평균 처리 기간</p>
+                        </div>
+                        
+                        <div class="p-5 bg-orange-50 rounded-lg text-center">
+                            <div class="text-orange-600 font-bold text-3xl mb-2">5회+</div>
+                            <p class="text-gray-700 text-sm">지원 신청 위한<br>평균 기관 방문 횟수</p>
+                        </div>
+                        
+                        <div class="p-5 bg-orange-50 rounded-lg text-center">
+                            <div class="text-orange-600 font-bold text-3xl mb-2">20시간</div>
+                            <p class="text-gray-700 text-sm">서류 작성에<br>소요되는 평균 시간</p>
+                        </div>
+                        
+                        <div class="p-5 bg-orange-50 rounded-lg text-center">
+                            <div class="text-orange-600 font-bold text-3xl mb-2">3-4회</div>
+                            <p class="text-gray-700 text-sm">동일 서류<br>평균 중복 제출 횟수</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 행정 프로세스 시각화 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-4">창업 행정 프로세스 복잡성</h4>
+                        <div class="overflow-x-auto">
+                            <div class="min-w-max">
+                                <div class="flex justify-between items-center mb-2">
+                                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">창업 준비</div>
+                                    <div class="h-0.5 w-16 bg-gray-300"></div>
+                                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">사업자 등록</div>
+                                    <div class="h-0.5 w-16 bg-gray-300"></div>
+                                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">인·허가 신청</div>
+                                    <div class="h-0.5 w-16 bg-gray-300"></div>
+                                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">지원사업 신청</div>
+                                    <div class="h-0.5 w-16 bg-gray-300"></div>
+                                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">입주 공간 확보</div>
+                                    <div class="h-0.5 w-16 bg-gray-300"></div>
+                                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg">운영 시작</div>
+                                </div>
+                                
+                                <div class="relative mt-8">
+                                    <div class="h-0.5 w-full bg-gray-300 absolute top-4"></div>
+                                    <div class="flex justify-between relative">
+                                        <div class="text-center">
+                                            <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 relative z-10">1</div>
+                                            <div class="bg-gray-100 p-2 rounded shadow-sm max-w-xs">
+                                                <p class="text-xs">기관별 상이한 정보로 혼란</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 relative z-10">2</div>
+                                            <div class="bg-gray-100 p-2 rounded shadow-sm max-w-xs">
+                                                <p class="text-xs">7개 기관 방문 및 중복 서류 제출</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 relative z-10">3</div>
+                                            <div class="bg-gray-100 p-2 rounded shadow-sm max-w-xs">
+                                                <p class="text-xs">인허가 기간 평균 30일 소요</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 relative z-10">4</div>
+                                            <div class="bg-gray-100 p-2 rounded shadow-sm max-w-xs">
+                                                <p class="text-xs">기관별 상이한 신청 양식</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <div class="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 relative z-10">5</div>
+                                            <div class="bg-gray-100 p-2 rounded shadow-sm max-w-xs">
+                                                <p class="text-xs">추가 행정 절차 및 대기 시간</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <div class="bg-green-100 text-green-700 w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 relative z-10">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                                </svg>
+                                            </div>
+                                            <div class="bg-gray-100 p-2 rounded shadow-sm max-w-xs">
+                                                <p class="text-xs">전체 소요 기간: 약 3-6개월</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 문제점 4: 사후 관리 체계 미흡 -->
+            <div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row items-start mb-6">
+                        <div class="bg-purple-100 text-purple-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mb-4 md:mb-0 md:mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-purple-600">사후 관리 체계 미흡</h3>
+                            <p class="text-gray-700 mb-4">일회성 자금 지원 후 체계적인 사후 관리가 부족하여 지원 효과가 저하됩니다.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 사후 관리 문제점 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-gray-50 p-6 rounded-lg border-t-4 border-purple-500">
+                            <h4 class="font-bold text-lg mb-3">단발성 지원</h4>
+                            <p class="text-gray-700">일회성 자금 지원 후 사후관리 부족으로 지속 성장을 위한 연계 지원 미흡</p>
+                            <div class="mt-4 bg-purple-50 p-3 rounded-lg">
+                                <p class="text-sm text-purple-700 italic">"창업 초기 자금은 지원받았지만, 이후 3개월 동안 어떤 후속 지원이나 컨설팅도 받지 못했습니다." - 창업 2년차 기업 대표</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg border-t-4 border-purple-500">
+                            <h4 class="font-bold text-lg mb-3">성과 추적 한계</h4>
+                            <p class="text-gray-700">개별 기관별 관리로 창업기업의 통합적 성과 파악이 어려움</p>
+                            <div class="mt-4 bg-purple-50 p-3 rounded-lg">
+                                <p class="text-sm text-purple-700 italic">"A기관에 매출자료를 제출했는데, B기관에서 또 같은 자료를 요청받았습니다. 기관 간 정보 공유가 안 되는 것 같아요." - 스타트업 창업자</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg border-t-4 border-purple-500">
+                            <h4 class="font-bold text-lg mb-3">연계 서비스 부족</h4>
+                            <p class="text-gray-700">창업 단계별 연속적 지원 체계가 미비하여 성장 과정에서 단절 발생</p>
+                            <div class="mt-4 bg-purple-50 p-3 rounded-lg">
+                                <p class="text-sm text-purple-700 italic">"초기 창업 이후 성장기에 접어들면서 필요한 지원 프로그램을 찾기 힘들었어요. 마치 초기 창업만 지원하는 느낌입니다." - 창업 3년차 기업</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 사후 관리 부재 시각화 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-4">창업 기업 생존율 추이</h4>
+                        <div class="h-64">
+                            <canvas id="startupSurvivalChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4 text-center">* 사후 관리 여부에 따른 창업 기업 생존율 비교 (가상 데이터)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 창업자 관점의 실질적 애로사항 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">3. 창업자 관점의 실질적 애로사항</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- 정보 비대칭 문제 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="bg-blue-100 text-blue-700 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">정보 비대칭 문제</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>자신에게 적합한 지원 프로그램을 찾기 어려움</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>프로그램 세부 요건과 혜택을 비교·분석할 도구 부족</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>동일 사업에 대한 기관별 상이한 정보 제공</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm italic text-gray-700">"TIPS 프로그램에 지원하려고 했는데, 각 운영사마다 제공하는 정보가 달라서 어디에 지원해야 할지 혼란스러웠어요."</p>
+                        <p class="text-sm text-gray-500 mt-2">- 창업 준비 중인 예비창업자</p>
+                    </div>
+                </div>
+                
+                <!-- 시간적·경제적 부담 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="bg-green-100 text-green-700 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">시간적·경제적 부담</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>창업 준비 기간 중 행정업무에 과도한 시간 투입</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>여러 기관 방문을 위한 교통비 및 기회비용 발생</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>복잡한 신청 절차로 인한 전문 컨설턴트 의존 심화</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <p class="text-sm italic text-gray-700">"제품 개발과 마케팅에 집중해야 할 시기에 서류 작업과 기관 방문으로 2개월을 소비했어요. 결국 컨설팅 업체에 200만원을 주고 대행을 맡겼습니다."</p>
+                        <p class="text-sm text-gray-500 mt-2">- IT 스타트업 대표</p>
+                    </div>
+                </div>
+                
+                <!-- 울산 지역 특화 지원 부족 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="bg-orange-100 text-orange-700 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">울산 지역 특화 지원 부족</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>제조업 중심 산업구조를 반영한 특화 프로그램 부족</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>대기업과의 상생협력 연계 시스템 미흡</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>산업단지 내 창업 특례 적용의 복잡성</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-orange-50 rounded-lg">
+                        <p class="text-sm italic text-gray-700">"울산에 연관 대기업이 많음에도 불구하고, 자동차부품 스타트업으로서 현대자동차와 협력할 수 있는 공식 프로그램을 찾기 어려웠습니다."</p>
+                        <p class="text-sm text-gray-500 mt-2">- 자동차부품 제조 스타트업 대표</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 창업자 인터뷰 사례 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-6">창업자 인터뷰</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg relative">
+                        <div class="absolute top-0 right-0 -mt-4 -mr-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828 2.828a9 9 0 002.828 0m-2.828-2.828a5 5 0 010-7.072m-2.828 9.9a9 9 0 010-12.728M8.464 8.464a5 5 0 00-1.414-1.414m-2.828-2.828a9 9 0 00-2.828 0" />
+                            </svg>
+                        </div>
+<div class="mb-4 flex items-center">
+    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+        <i class="fas fa-user-tie fa-lg"></i>
+    </div>
+    <div>
+        <h4 class="font-bold">김○○ 대표</h4>
+        <p class="text-sm text-gray-600">에너지 효율화 솔루션 스타트업 | 창업 2년차</p>
+    </div>
+</div>
+                        <p class="italic text-gray-700 mb-4">"정부지원사업에 지원하기 위해 8개 문서, 40장 분량의 서류를 준비했습니다. 문제는 다른 사업에 지원할 때도 대부분의 서류를 다시 작성해야 한다는 점이었죠. 기업 정보나 팀 구성이 같은데도 각 기관마다 양식이 달라서 반복적인 작업이 필요했습니다."</p>
+                        <p class="italic text-gray-700">"실제 제품 개발보다 서류 작업에 더 많은 시간을 쏟게 되는 것이 현실입니다. 울산은 특히 제조업 기반 스타트업에게 맞춤형 지원이 부족해서 아쉽습니다."</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg relative">
+                        <div class="absolute top-0 right-0 -mt-4 -mr-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828 2.828a9 9 0 002.828 0m-2.828-2.828a5 5 0 010-7.072m-2.828 9.9a9 9 0 010-12.728M8.464 8.464a5 5 0 00-1.414-1.414m-2.828-2.828a9 9 0 00-2.828 0" />
+                            </svg>
+                        </div>
+                        <div class="mb-4 flex items-center">
+                            <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                <i class="fas fa-user-tie fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">박○○ 대표</h4>
+                                <p class="text-sm text-gray-600">스마트팩토리 솔루션 | 창업 3년차</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 mb-4">"울산에는 대규모 제조업 현장이 많아 저희 같은 스마트팩토리 스타트업에게는 좋은 테스트베드가 될 수 있습니다. 하지만 정작 현대차나 중공업같은 대기업과 협업할 수 있는 공식 채널을 찾기가 너무 어려웠어요."</p>
+                        <p class="italic text-gray-700">"여러 기관을 찾아다니며 정보를 얻었지만, 각 기관마다 다른 정보를 주어 혼란스러웠습니다. 결국 제품 개발에 집중해야 할 6개월 동안 행정 처리에만 시간을 쏟게 되었죠. 이런 비효율적인 과정이 개선되면 좋겠습니다."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다음 페이지 안내 -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6">이러한 문제점을 해결하기 위한 개선 방안</h2>
+            <p class="mb-8">울산 창업 생태계의 문제점을 해결하고 창업 활성화를 위한 혁신적인 솔루션을 제안합니다.</p>
+            <a href="improvement.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition">
+                개선 방안 살펴보기
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">울산 창업 원스톱 디지털 플랫폼</h3>
+                    <p>울산광역시 규제개혁 아이디어 공모전 제안</p>
+                    <p class="mt-2">2025년 울산광역시 규제개혁 아이디어 공모</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">사이트맵</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white">홈</a></li>
+                        <li><a href="current-state.html" class="hover:text-white">현황 및 문제점</a></li>
+                        <li><a href="improvement.html" class="hover:text-white">개선 방안</a></li>
+                        <li><a href="expected-effects.html" class="hover:text-white">기대 효과</a></li>
+                        <li><a href="feasibility.html" class="hover:text-white">실현가능성</a></li>
+                        <li><a href="trend-analysis.html" class="hover:text-white">트렌드 분석</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">문의</h3>
+                    <p>울산광역시 남구 중앙로 201</p>
+                    <p>울산광역시청 법무통계담당관</p>
+                    <p>법제규제혁신팀</p>
+                    <p class="mt-2">tladudal@korea.kr</p>
+                    <p>☎ 052-229-2274, 2275</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 울산광역시. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // 울산 창업 생태계 차트
+        function renderStartupEcosystemChart() {
+            const ctx = document.getElementById('startupEcosystemChart');
+            if (!ctx) return;
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['기술기반업종 창업기업 수', '벤처확인기업 평균매출액', '창업·벤처 펀드 규모', 'TIPS 선정기업 투자금액'],
+                    datasets: [{
+                        label: '2021년',
+                        backgroundColor: 'rgba(0, 82, 165, 0.6)',
+                        data: [80, 100, 1040, 2],
+                    }, {
+                        label: '2022년',
+                        backgroundColor: 'rgba(51, 204, 153, 0.6)',
+                        data: [85, 120, 1450, 10],
+                    }, {
+                        label: '2023년',
+                        backgroundColor: 'rgba(255, 102, 51, 0.6)',
+                        data: [92, 152, 1890, 18],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '상대 지표 값 (2021년 기준 = 100)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.dataset.label || '';
+                                    let value = context.parsed.y;
+                                    
+                                    if (context.dataIndex === 0) {
+                                        return `${label}: ${value} (기업 수 상대지표)`;
+                                    } else if (context.dataIndex === 1) {
+                                        return `${label}: ${value} (매출액 상대지표)`;
+                                    } else if (context.dataIndex === 2) {
+                                        return `${label}: ${value}억원`;
+                                    } else if (context.dataIndex === 3) {
+                                        return `${label}: ${value}억원`;
+                                    }
+                                    
+                                    return `${label}: ${value}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 창업 기업 생존율 차트
+        function renderStartupSurvivalChart() {
+            const ctx = document.getElementById('startupSurvivalChart');
+            if (!ctx) return;
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['창업', '1년', '2년', '3년', '4년', '5년'],
+                    datasets: [{
+                        label: '사후관리 있음',
+                        data: [100, 92, 85, 76, 68, 61],
+                        borderColor: 'rgba(51, 204, 153, 1)',
+                        backgroundColor: 'rgba(51, 204, 153, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }, {
+                        label: '사후관리 없음',
+                        data: [100, 85, 65, 48, 36, 27],
+                        borderColor: 'rgba(255, 102, 51, 1)',
+                        backgroundColor: 'rgba(255, 102, 51, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: '생존율 (%)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.dataset.label || '';
+                                    const value = context.parsed.y;
+                                    return `${label}: ${value}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 페이지 로드 시 차트 렌더링
+        document.addEventListener('DOMContentLoaded', function() {
+            renderStartupEcosystemChart();
+            renderStartupSurvivalChart();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실현가능성 분석 | 울산 창업 원스톱 디지털 플랫폼</title>
+    <meta name="description" content="울산 창업 원스톱 디지털 플랫폼의 기술적, 제도적, 경제적, 사회적 실현가능성 분석">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="font-noto bg-gray-50 text-gray-800">
+    <!-- 헤더 섹션 -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="img/logo02.png" alt="울산시 로고" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-2xl font-bold">울산 창업 원스톱 디지털 플랫폼</h1>
+                    <p class="text-blue-100">울산광역시 규제개혁 아이디어 공모전</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-end">
+                <a href="index.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">홈</a>
+                <a href="current-state.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">현황 및 문제점</a>
+                <a href="improvement.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">개선 방안</a>
+                <a href="expected-effects.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">기대 효과</a>
+                <a href="feasibility.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition bg-blue-800">실현가능성</a>
+                <a href="trend-analysis.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">트렌드 분석</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 페이지 제목 -->
+    <section class="py-12 bg-blue-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">실현가능성 분석</h2>
+            <p class="text-xl">울산 창업 원스톱 디지털 플랫폼의 기술적, 제도적, 경제적, 사회적 실현가능성을 종합적으로 분석합니다.</p>
+        </div>
+    </section>
+
+    <!-- 종합 실현가능성 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">종합 실현가능성 평가</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8 items-center justify-center mb-12">
+                <div class="w-full md:w-1/2 max-w-xl">
+                    <canvas id="feasibilityRadarChart" class="chart-container" height="300"></canvas>
+                </div>
+                <div class="w-full md:w-1/2 max-w-xl">
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-700">평가 결과 요약</h3>
+                        <p class="mb-4">울산 창업 원스톱 디지털 플랫폼은 4개 핵심 영역에서 높은 실현가능성을 보였습니다. 특히 기술적, 경제적 측면의 실현가능성이 매우 높게 평가되었으며, 사회적 수용성 또한 우수합니다.</p>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <div class="w-4 h-4 rounded-full bg-red-500 mr-3"></div>
+                                <div>
+                                    <span class="font-bold">기술적 실현가능성:</span> 5/5
+                                    <div class="progress-container">
+                                        <div class="progress-bar bg-red-500" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-4 h-4 rounded-full bg-blue-500 mr-3"></div>
+                                <div>
+                                    <span class="font-bold">제도적 실현가능성:</span> 4/5
+                                    <div class="progress-container">
+                                        <div class="progress-bar bg-blue-500" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-4 h-4 rounded-full bg-green-500 mr-3"></div>
+                                <div>
+                                    <span class="font-bold">경제적 실현가능성:</span> 5/5
+                                    <div class="progress-container">
+                                        <div class="progress-bar bg-green-500" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-4 h-4 rounded-full bg-yellow-500 mr-3"></div>
+                                <div>
+                                    <span class="font-bold">사회적 수용성:</span> 5/5
+                                    <div class="progress-container">
+                                        <div class="progress-bar bg-yellow-500" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-6 text-center">
+                            <span class="bg-blue-700 text-white px-4 py-2 rounded-full font-bold text-lg">종합 평가: 매우 우수 (4.75/5)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기술적 실현가능성 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">기술적 실현가능성 <span class="text-red-500">⭐⭐⭐⭐⭐</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- 기반 기술의 성숙도 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-red-100 text-red-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">기반 기술의 성숙도</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold mb-2">AI/머신러닝</h4>
+                            <div class="flex justify-between mb-1">
+                                <span>현재 기술 수준</span>
+                                <span class="font-medium">매우 높음</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-red-500" style="width: 95%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1">창업 분야 적용 사례 다수 존재</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2">빅데이터 분석</h4>
+                            <div class="flex justify-between mb-1">
+                                <span>현재 기술 수준</span>
+                                <span class="font-medium">높음</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-red-500" style="width: 90%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1">정부 공공데이터 활용 가능, 클라우드 인프라 안정성 확보</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2">시스템 통합</h4>
+                            <div class="flex justify-between mb-1">
+                                <span>현재 기술 수준</span>
+                                <span class="font-medium">높음</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-red-500" style="width: 90%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1">API 기반 연동 기술 확립, 마이크로서비스 아키텍처 적용</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 기술적 리스크 관리 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-red-100 text-red-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">기술적 리스크 관리</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold mb-2">보안성 확보</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>개인정보보호 강화 (암호화, 접근제어)</li>
+                                <li>사이버보안 인증 획득</li>
+                                <li>정기적 보안 점검 체계</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2">안정성 보장</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>이중화 시스템 구축</li>
+                                <li>백업 및 복구 체계 완비</li>
+                                <li>부하 분산 처리</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="p-4 bg-red-50 rounded-lg">
+                            <h4 class="font-bold mb-2">핵심 기술적 강점</h4>
+                            <p>벤더 중립적인 API 기반 설계로 기존 시스템과의 높은 호환성 확보</p>
+                            <p>점진적 기능 확장이 가능한 마이크로서비스 아키텍처 적용</p>
+                            <p>유사 프로젝트 성공 사례 다수 존재</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 시스템 아키텍처 다이어그램 -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-xl font-bold text-center mb-4">시스템 아키텍처 개념도</h3>
+                <div class="h-96 relative overflow-hidden bg-blue-50 rounded-lg p-4">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-full max-w-4xl">
+                            <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" class="w-full">
+                                <!-- 백엔드 시스템 -->
+                                <rect x="50" y="50" width="700" height="300" rx="10" fill="#E5E7EB" />
+                                <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">울산 창업 원스톱 디지털 플랫폼 시스템 아키텍처</text>
+                                
+                                <!-- 프론트엔드 -->
+                                <rect x="100" y="80" width="600" height="80" rx="5" fill="#DBEAFE" />
+                                <text x="400" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">사용자 인터페이스 레이어</text>
+                                <rect x="150" y="100" width="100" height="40" rx="5" fill="#FFFFFF" stroke="#93C5FD" />
+                                <text x="200" y="125" text-anchor="middle" font-size="12" fill="#1E40AF">Web App</text>
+                                <rect x="270" y="100" width="100" height="40" rx="5" fill="#FFFFFF" stroke="#93C5FD" />
+                                <text x="320" y="125" text-anchor="middle" font-size="12" fill="#1E40AF">Mobile App</text>
+                                <rect x="390" y="100" width="140" height="40" rx="5" fill="#FFFFFF" stroke="#93C5FD" />
+                                <text x="460" y="125" text-anchor="middle" font-size="12" fill="#1E40AF">Admin Dashboard</text>
+                                <rect x="550" y="100" width="100" height="40" rx="5" fill="#FFFFFF" stroke="#93C5FD" />
+                                <text x="600" y="125" text-anchor="middle" font-size="12" fill="#1E40AF">API Portal</text>
+                                
+                                <!-- 미들웨어 -->
+                                <rect x="100" y="180" width="600" height="80" rx="5" fill="#D1FAE5" />
+                                <text x="400" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#065F46">서비스 레이어</text>
+                                <rect x="120" y="200" width="160" height="40" rx="5" fill="#FFFFFF" stroke="#6EE7B7" />
+                                <text x="200" y="225" text-anchor="middle" font-size="12" fill="#065F46">AI 추천 엔진</text>
+                                <rect x="300" y="200" width="160" height="40" rx="5" fill="#FFFFFF" stroke="#6EE7B7" />
+                                <text x="380" y="225" text-anchor="middle" font-size="12" fill="#065F46">통합 신청 관리</text>
+                                <rect x="480" y="200" width="200" height="40" rx="5" fill="#FFFFFF" stroke="#6EE7B7" />
+                                <text x="580" y="225" text-anchor="middle" font-size="12" fill="#065F46">울산 산업 연계 서비스</text>
+                                
+                                <!-- 백엔드 -->
+                                <rect x="100" y="280" width="600" height="50" rx="5" fill="#FEE2E2" />
+                                <text x="400" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#7F1D1D">데이터 레이어</text>
+                                <rect x="150" y="290" width="120" height="30" rx="5" fill="#FFFFFF" stroke="#FECACA" />
+                                <text x="210" y="310" text-anchor="middle" font-size="11" fill="#7F1D1D">인증 DB</text>
+                                <rect x="290" y="290" width="120" height="30" rx="5" fill="#FFFFFF" stroke="#FECACA" />
+                                <text x="350" y="310" text-anchor="middle" font-size="11" fill="#7F1D1D">트랜잭션 DB</text>
+                                <rect x="430" y="290" width="120" height="30" rx="5" fill="#FFFFFF" stroke="#FECACA" />
+                                <text x="490" y="310" text-anchor="middle" font-size="11" fill="#7F1D1D">분석 DB</text>
+                                <rect x="570" y="290" width="80" height="30" rx="5" fill="#FFFFFF" stroke="#FECACA" />
+                                <text x="610" y="310" text-anchor="middle" font-size="11" fill="#7F1D1D">파일 저장소</text>
+                                
+                                <!-- 연결선 -->
+                                <line x1="200" y1="140" x2="200" y2="180" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="320" y1="140" x2="320" y2="180" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="460" y1="140" x2="460" y2="180" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="600" y1="140" x2="600" y2="180" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                                
+                                <line x1="200" y1="240" x2="200" y2="280" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="380" y1="240" x2="380" y2="280" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                                <line x1="580" y1="240" x2="580" y2="280" stroke="#94A3B8" stroke-width="2" stroke-dasharray="5,5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 제도적 실현가능성 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">제도적 실현가능성 <span class="text-blue-500">⭐⭐⭐⭐☆</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- 법적 근거 확보 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-blue-100 text-blue-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">법적 근거 확보</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold mb-2">기존 법령 활용</h4>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>법령</th>
+                                        <th>근거 조항</th>
+                                        <th>적용 내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>지방자치법</td>
+                                        <td>제9조</td>
+                                        <td>자치사무 범위</td>
+                                    </tr>
+                                    <tr>
+                                        <td>전자정부법</td>
+                                        <td>제35조, 제36조</td>
+                                        <td>행정 전자화 근거</td>
+                                    </tr>
+                                    <tr>
+                                        <td>개인정보보호법</td>
+                                        <td>제15조, 제17조</td>
+                                        <td>개인정보 처리 기준</td>
+                                    </tr>
+                                    <tr>
+                                        <td>벤처기업육성법</td>
+                                        <td>제4조, 제5조</td>
+                                        <td>창업 지원 근거</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2">조례 제·개정 필요</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>울산광역시 창업지원 조례 개정</li>
+                            <li>개인정보 처리 특례 조항 신설</li>
+                            <li>기관 간 정보 공유 근거 마련</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 기관 간 협력 체계 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-blue-100 text-blue-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">기관 간 협력 체계</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold mb-2">참여 기관의 적극성</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-3 bg-blue-50 rounded-lg">
+                                <h5 class="font-bold mb-1 text-blue-700">울산시</h5>
+                                <div class="flex items-center">
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 mr-2">
+                                        <div class="bg-blue-700 h-2.5 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                    <span class="text-sm">매우 높음</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-blue-50 rounded-lg">
+                                <h5 class="font-bold mb-1 text-blue-700">유관 기관</h5>
+                                <div class="flex items-center">
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 mr-2">
+                                        <div class="bg-blue-700 h-2.5 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                    <span class="text-sm">높음</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-blue-50 rounded-lg">
+                                <h5 class="font-bold mb-1 text-blue-700">중앙정부</h5>
+                                <div class="flex items-center">
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 mr-2">
+                                        <div class="bg-blue-700 h-2.5 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                    <span class="text-sm">보통</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-blue-50 rounded-lg">
+                                <h5 class="font-bold mb-1 text-blue-700">민간 기업</h5>
+                                <div class="flex items-center">
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 mr-2">
+                                        <div class="bg-blue-700 h-2.5 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-sm">높음</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-bold mb-2">거버넌스 구축</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>창업지원협의체 설치</li>
+                            <li>정기적 성과 공유 회의</li>
+                            <li>갈등 조정 메커니즘 마련</li>
+                        </ul>
+                        <p class="mt-3 text-sm">시장 주도의 강력한 추진력과 기관 간 협력 분위기로 협력 체계 구축 가능성 높음</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 기관 협력 네트워크 다이어그램 -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-xl font-bold text-center mb-4">기관 협력 네트워크 모형</h3>
+                <div class="h-96 relative overflow-hidden bg-blue-50 rounded-lg p-4">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-full max-w-4xl">
+                            <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" class="w-full">
+                                <!-- 배경 원 -->
+                                <circle cx="400" cy="200" r="180" fill="#E0E7FF" />
+                                <circle cx="400" cy="200" r="130" fill="#C7D2FE" />
+                                <circle cx="400" cy="200" r="80" fill="#A5B4FC" />
+                                
+                       <line x1="340" y1="140" x2="400" y2="200" stroke="#94A3B8" stroke-width="2" />
+                       <line x1="460" y1="140" x2="400" y2="200" stroke="#94A3B8" stroke-width="2" />
+                       <line x1="460" y1="260" x2="400" y2="200" stroke="#94A3B8" stroke-width="2" />
+                       <line x1="340" y1="260" x2="400" y2="200" stroke="#94A3B8" stroke-width="2" />
+
+
+                                <!-- 중앙 노드: 울산광역시 -->
+                                <circle cx="400" cy="200" r="40" fill="#3B82F6" />
+                                <text x="400" y="205" text-anchor="middle" font-size="12" font-weight="bold" fill="white">울산광역시</text>
+                                
+                                <!-- 1층: 유관 기관 -->
+                                <!-- 울산경제일자리진흥원 -->
+                                <circle cx="320" cy="120" r="30" fill="#34D399" />
+                                <text x="320" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="white">울산경제</text>
+                                <text x="320" y="132" text-anchor="middle" font-size="10" font-weight="bold" fill="white">일자리진흥원</text>
+         
+                                
+                                <!-- 울산창조경제혁신센터 -->
+                                <circle cx="480" cy="120" r="30" fill="#34D399" />
+                                <text x="480" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="white">울산창조</text>
+                                <text x="480" y="132" text-anchor="middle" font-size="10" font-weight="bold" fill="white">경제혁신센터</text>
+                            
+                                
+                                <!-- 울산테크노파크 -->
+                                <circle cx="520" cy="200" r="30" fill="#34D399" />
+                                <text x="520" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="white">울산</text>
+                                <text x="520" y="212" text-anchor="middle" font-size="10" font-weight="bold" fill="white">테크노파크</text>
+                                <line x1="490" y1="200" x2="440" y2="200" stroke="#94A3B8" stroke-width="2" />
+                                
+                                <!-- 중소벤처기업진흥공단 -->
+                                <circle cx="480" cy="280" r="30" fill="#34D399" />
+                                <text x="480" y="280" text-anchor="middle" font-size="10" font-weight="bold" fill="white">중소벤처</text>
+                                <text x="480" y="292" text-anchor="middle" font-size="10" font-weight="bold" fill="white">기업진흥공단</text>
+                            
+                                
+                                <!-- 울산상공회의소 -->
+                                <circle cx="320" cy="280" r="30" fill="#34D399" />
+                                <text x="320" y="280" text-anchor="middle" font-size="10" font-weight="bold" fill="white">울산</text>
+                                <text x="320" y="292" text-anchor="middle" font-size="10" font-weight="bold" fill="white">상공회의소</text>
+                        
+                                
+                                <!-- 울산대학교 -->
+                                <circle cx="280" cy="200" r="30" fill="#34D399" />
+                                <text x="280" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="white">울산</text>
+                                <text x="280" y="212" text-anchor="middle" font-size="10" font-weight="bold" fill="white">대학교</text>
+                                <line x1="310" y1="200" x2="360" y2="200" stroke="#94A3B8" stroke-width="2" />
+                                
+                                <!-- 2층: 민간 기업 -->
+                                <circle cx="180" cy="100" r="25" fill="#F97316" />
+                                <text x="180" y="100" text-anchor="middle" font-size="9" font-weight="bold" fill="white">현대자동차</text>
+                                <line x1="210" y1="125" x2="320" y2="120" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="100" cy="200" r="25" fill="#F97316" />
+                                <text x="100" y="200" text-anchor="middle" font-size="9" font-weight="bold" fill="white">현대중공업</text>
+                                <line x1="130" y1="200" x2="280" y2="200" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="180" cy="300" r="25" fill="#F97316" />
+                                <text x="180" y="300" text-anchor="middle" font-size="9" font-weight="bold" fill="white">SK에너지</text>
+                                <line x1="210" y1="275" x2="320" y2="280" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="620" cy="100" r="25" fill="#F97316" />
+                                <text x="620" y="100" text-anchor="middle" font-size="9" font-weight="bold" fill="white">스타트업</text>
+                                <line x1="590" y1="125" x2="480" y2="120" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="700" cy="200" r="25" fill="#F97316" />
+                                <text x="700" y="200" text-anchor="middle" font-size="9" font-weight="bold" fill="white">중소기업</text>
+                                <line x1="670" y1="200" x2="520" y2="200" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="620" cy="300" r="25" fill="#F97316" />
+                                <text x="620" y="300" text-anchor="middle" font-size="9" font-weight="bold" fill="white">벤처캐피탈</text>
+                                <line x1="590" y1="275" x2="480" y2="280" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <!-- 3층: 중앙 부처 -->
+                                <circle cx="230" cy="40" r="20" fill="#8B5CF6" />
+                                <text x="230" y="40" text-anchor="middle" font-size="8" font-weight="bold" fill="white">중기부</text>
+                                <line x1="230" y1="60" x2="320" y2="90" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="400" cy="30" r="20" fill="#8B5CF6" />
+                                <text x="400" y="30" text-anchor="middle" font-size="8" font-weight="bold" fill="white">산업부</text>
+                                <line x1="400" y1="50" x2="400" y2="160" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <circle cx="570" cy="40" r="20" fill="#8B5CF6" />
+                                <text x="570" y="40" text-anchor="middle" font-size="8" font-weight="bold" fill="white">과기부</text>
+                                <line x1="570" y1="60" x2="480" y2="90" stroke="#94A3B8" stroke-width="1" stroke-dasharray="5,5" />
+                                
+                                <!-- 설명 텍스트 -->
+                                <text x="400" y="390" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">울산 창업 원스톱 디지털 플랫폼 협력 네트워크</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 경제적 실현가능성 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">경제적 실현가능성 <span class="text-green-500">⭐⭐⭐⭐⭐</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- 소요 예산 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-green-100 text-green-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">소요 예산</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold mb-2">초기 구축비 (20억원)</h4>
+                        <div class="chart-container h-64">
+                            <canvas id="initialBudgetChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-2">연간 운영비 (12억원)</h4>
+                        <div class="chart-container h-64">
+                            <canvas id="operationBudgetChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 투자 회수 분석 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-green-100 text-green-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">투자 대비 효과</h3>
+                    
+                    <div class="mb-6">
+                        <div class="p-4 bg-green-50 rounded-lg text-center mb-4">
+                            <h4 class="font-bold mb-1">투자회수기간</h4>
+                            <p class="text-4xl font-bold text-green-700">약 3개월</p>
+                            <p class="text-sm mt-1">초기 투자: 20억원 / 연간 절감 효과: 94.5억원</p>
+                        </div>
+                        
+                        <div class="chart-container h-64">
+                            <canvas id="roiChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-bold mb-2">재원 조달 방안</h4>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span>중소벤처기업부 지원 (50%)</span>
+                                <span class="font-medium">10억원</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-green-700" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span>울산시 자체예산 (30%)</span>
+                                <span class="font-medium">6억원</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-green-700" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>관련 기관 분담금 (20%)</span>
+                                <span class="font-medium">4억원</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-green-700" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 투자 계산기 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-center mb-6">ROI 계산기</h3>
+                
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="w-full md:w-1/2">
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <h4 class="font-bold mb-4">투자 및 효과 시뮬레이션</h4>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">초기 투자액 (억원)</label>
+                                    <input type="number" id="initialInvestment" value="20" min="1" max="100" class="w-full px-3 py-2 border rounded-md">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">연간 운영비 (억원)</label>
+                                    <input type="number" id="annualOperation" value="12" min="1" max="100" class="w-full px-3 py-2 border rounded-md">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">연간 절감 효과 (억원)</label>
+                                    <input type="number" id="annualSavings" value="94.5" min="1" max="200" class="w-full px-3 py-2 border rounded-md">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">계산 기간 (년)</label>
+                                    <input type="number" id="calculationPeriod" value="5" min="1" max="10" class="w-full px-3 py-2 border rounded-md">
+                                </div>
+                            </div>
+                            
+                            <button id="calculateROI" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                결과 계산하기
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+                        <div class="p-4 bg-gray-100 rounded-lg h-full">
+                            <h4 class="font-bold mb-4">계산 결과</h4>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="bg-white p-3 rounded shadow">
+                                    <p class="text-sm text-gray-500">투자회수기간</p>
+                                    <p id="paybackPeriod" class="text-2xl font-bold text-green-700">0.21년 (약 3개월)</p>
+                                </div>
+                                <div class="bg-white p-3 rounded shadow">
+                                    <p class="text-sm text-gray-500">5년간 순편익</p>
+                                    <p id="netBenefit" class="text-2xl font-bold text-green-700">452.5억원</p>
+                                </div>
+                                <div class="bg-white p-3 rounded shadow">
+                                    <p class="text-sm text-gray-500">ROI</p>
+                                    <p id="roiValue" class="text-2xl font-bold text-green-700">2,262.5%</p>
+                                </div>
+                                <div class="bg-white p-3 rounded shadow">
+                                    <p class="text-sm text-gray-500">연평균 수익률</p>
+                                    <p id="annualReturn" class="text-2xl font-bold text-green-700">452.5%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 p-3 rounded-lg">
+                                <p class="font-bold text-green-800 mb-1">결론</p>
+                                <p id="conclusion" class="text-sm">초기 투자 대비 매우 높은 경제적 가치를 창출할 것으로 예상됩니다. 약 3개월이라는 짧은 기간 내에 투자금을 회수할 수 있고, 5년간 450억원 이상의 순편익이 발생합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사회적 수용성 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">사회적 수용성 <span class="text-yellow-500">⭐⭐⭐⭐⭐</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- 이해관계자 분석 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-yellow-100 text-yellow-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">이해관계자 분석</h3>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>이해관계자</th>
+                                    <th>예상 반응</th>
+                                    <th>기대 이익</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>창업자</td>
+                                    <td class="text-green-700">매우 긍정적</td>
+                                    <td>행정 부담 감소, 맞춤형 지원</td>
+                                </tr>
+                                <tr>
+                                    <td>지원기관</td>
+                                    <td class="text-green-700">긍정적</td>
+                                    <td>업무 효율성 향상, 성과 증대</td>
+                                </tr>
+                                <tr>
+                                    <td>시민</td>
+                                    <td class="text-green-700">긍정적</td>
+                                    <td>지역 경제 활성화, 일자리 창출</td>
+                                </tr>
+                                <tr>
+                                    <td>지방정부</td>
+                                    <td class="text-green-700">매우 긍정적</td>
+                                    <td>정책 효과 증대, 혁신 이미지</td>
+                                </tr>
+                                <tr>
+                                    <td>대기업</td>
+                                    <td class="text-yellow-600">중립적</td>
+                                    <td>협력 생태계 강화</td>
+                                </tr>
+                                <tr>
+                                    <td>기존 서비스 제공자</td>
+                                    <td class="text-yellow-600">일부 우려</td>
+                                    <td>시너지 효과 기대</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- 사회적 요구 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="icon-circle bg-yellow-100 text-yellow-700 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">사회적 요구</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="p-4 bg-yellow-50 rounded-lg">
+                            <h4 class="font-bold mb-2">디지털 전환 요구</h4>
+                            <div class="flex justify-between mb-1">
+                                <span>사회적 중요도</span>
+                                <span class="font-medium">매우 높음</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-yellow-500" style="width: 90%"></div>
+                            </div>
+                            <p class="text-sm mt-2">코로나19 이후 비대면 서비스 선호도 급증, 디지털 정부 서비스 확대 요구</p>
+                        </div>
+                        
+                        <div class="p-4 bg-yellow-50 rounded-lg">
+                            <h4 class="font-bold mb-2">행정 혁신 요구</h4>
+                            <div class="flex justify-between mb-1">
+                                <span>사회적 중요도</span>
+                                <span class="font-medium">높음</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-yellow-500" style="width: 85%"></div>
+                            </div>
+                            <p class="text-sm mt-2">정부의 디지털 뉴딜 정책과 부합, 행정 서비스 간소화 요구 증가</p>
+                        </div>
+                        
+                        <div class="p-4 bg-yellow-50 rounded-lg">
+                            <h4 class="font-bold mb-2">지역 발전 요구</h4>
+                            <div class="flex justify-between mb-1">
+                                <span>사회적 중요도</span>
+                                <span class="font-medium">매우 높음</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar bg-yellow-500" style="width: 95%"></div>
+                            </div>
+                            <p class="text-sm mt-2">청년 정착 및 일자리 창출 필요성 증대, 산업구조 다각화 요구</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 잠재적 우려사항 및 대응 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-center mb-6">잠재적 우려사항 및 대응</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full comparison-table">
+                        <thead>
+                            <tr>
+                                <th>우려사항</th>
+                                <th>내용</th>
+                                <th>대응 방안</th>
+                                <th>위험도</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium">개인정보 보호</td>
+                                <td>개인정보 오남용 가능성</td>
+                                <td>
+                                    <ul class="list-disc pl-5 text-sm">
+                                        <li>최소수집 원칙 적용</li>
+                                        <li>투명한 처리 과정 공개</li>
+                                        <li>ISMS 인증 취득</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class="flex items-center">
+                                        <div class="w-16 bg-gray-200 rounded-full h-2.5 mr-2">
+                                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 40%"></div>
+                                        </div>
+                                        <span class="text-xs">낮음</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">디지털 격차</td>
+                                <td>고령자 등 접근성 제한</td>
+                                <td>
+                                    <ul class="list-disc pl-5 text-sm">
+                                        <li>대면 지원 창구 병행 운영</li>
+                                        <li>직관적 UI/UX 설계</li>
+                                        <li>디지털 교육 지원</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class="flex items-center">
+                                        <div class="w-16 bg-gray-200 rounded-full h-2.5 mr-2">
+                                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 60%"></div>
+                                        </div>
+                                        <span class="text-xs">중간</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">기관 간 이해관계</td>
+                                <td>기존 업무 영역 침해</td>
+                                <td>
+                                    <ul class="list-disc pl-5 text-sm">
+                                        <li>기관별 역할 명확화</li>
+                                        <li>상생 협력 모델 제시</li>
+                                        <li>공동 성과 지표 개발</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class="flex items-center">
+                                        <div class="w-16 bg-gray-200 rounded-full h-2.5 mr-2">
+                                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 50%"></div>
+                                        </div>
+                                        <span class="text-xs">중간</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">시스템 안정성</td>
+                                <td>서비스 중단 위험</td>
+                                <td>
+                                    <ul class="list-disc pl-5 text-sm">
+                                        <li>클라우드 기반 이중화</li>
+                                        <li>재해복구(DR) 시스템 구축</li>
+                                        <li>24시간 모니터링</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class="flex items-center">
+                                        <div class="w-16 bg-gray-200 rounded-full h-2.5 mr-2">
+                                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 30%"></div>
+                                        </div>
+                                        <span class="text-xs">낮음</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">서비스 지속성</td>
+                                <td>정책 변화에 따른 중단</td>
+                                <td>
+                                    <ul class="list-disc pl-5 text-sm">
+                                        <li>조례를 통한 제도적 근거 마련</li>
+                                        <li>자체 수익 모델 확립</li>
+                                        <li>다양한 이해관계자 참여</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class="flex items-center">
+                                        <div class="w-16 bg-gray-200 rounded-full h-2.5 mr-2">
+                                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 20%"></div>
+                                        </div>
+                                        <span class="text-xs">매우 낮음</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 추진 일정 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">단계별 추진 일정</h2>
+            
+            <div class="relative">
+                <!-- 수평 타임라인 -->
+                <div class="hidden md:block mb-12">
+                    <div class="h-1 bg-blue-200 absolute w-full top-6"></div>
+                    
+                    <div class="flex justify-between relative">
+                        <div class="w-1/4 px-2">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 relative z-10">1</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">기반 구축</h3>
+                                <p class="text-sm mb-2">1-6개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>플랫폼 기본 설계 및 개발</li>
+                                    <li>관련 조례 개정안 입법예고</li>
+                                    <li>기관 간 업무협약(MOU) 체결</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="w-1/4 px-2">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 relative z-10">2</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">시범 운영</h3>
+                                <p class="text-sm mb-2">7-12개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>울산 전체 창업자 대상 서비스 개시</li>
+                                    <li>이용자 만족도 조사 실시</li>
+                                    <li>사용자 피드백 반영 개선</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="w-1/4 px-2">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 relative z-10">3</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">확산 운영</h3>
+                                <p class="text-sm mb-2">13-18개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>전 단계 지원 서비스 확대</li>
+                                    <li>타 지역 벤치마킹 및 확산</li>
+                                    <li>민간 서비스 연계 확대</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="w-1/4 px-2">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 relative z-10">4</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">성숙화</h3>
+                                <p class="text-sm mb-2">19-24개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>울산 창업 생태계 핵심 인프라 정착</li>
+                                    <li>자체 수익 모델 확립</li>
+                                    <li>전국 지자체 표준 모델 제시</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 모바일 수직 타임라인 -->
+                <div class="md:hidden">
+                    <div class="space-y-8">
+                        <div class="timeline-item">
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">1단계: 기반 구축</h3>
+                                <p class="text-sm mb-2">1-6개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>플랫폼 기본 설계 및 개발</li>
+                                    <li>관련 조례 개정안 입법예고</li>
+                                    <li>기관 간 업무협약(MOU) 체결</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">2단계: 시범 운영</h3>
+                                <p class="text-sm mb-2">7-12개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>울산 전체 창업자 대상 서비스 개시</li>
+                                    <li>이용자 만족도 조사 실시</li>
+                                    <li>사용자 피드백 반영 개선</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">3단계: 확산 운영</h3>
+                                <p class="text-sm mb-2">13-18개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>전 단계 지원 서비스 확대</li>
+                                    <li>타 지역 벤치마킹 및 확산</li>
+                                    <li>민간 서비스 연계 확대</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <h3 class="font-bold text-lg mb-2 text-blue-700">4단계: 성숙화</h3>
+                                <p class="text-sm mb-2">19-24개월</p>
+                                <ul class="text-sm list-disc pl-5 space-y-1">
+                                    <li>울산 창업 생태계 핵심 인프라 정착</li>
+                                    <li>자체 수익 모델 확립</li>
+                                    <li>전국 지자체 표준 모델 제시</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">울산 창업 원스톱 디지털 플랫폼</h3>
+                    <p>울산광역시 규제개혁 아이디어 공모전 제안</p>
+                    <p class="mt-2">2025년 울산광역시 규제개혁 아이디어 공모</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">사이트맵</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white">홈</a></li>
+                        <li><a href="current-state.html" class="hover:text-white">현황 및 문제점</a></li>
+                        <li><a href="improvement.html" class="hover:text-white">개선 방안</a></li>
+                        <li><a href="expected-effects.html" class="hover:text-white">기대 효과</a></li>
+                        <li><a href="feasibility.html" class="hover:text-white">실현가능성</a></li>
+                        <li><a href="trend-analysis.html" class="hover:text-white">트렌드 분석</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">문의</h3>
+                    <p>울산광역시 남구 중앙로 201</p>
+                    <p>울산광역시청 법무통계담당관</p>
+                    <p>법제규제혁신팀</p>
+                    <p class="mt-2">tladudal@korea.kr</p>
+                    <p>☎ 052-229-2274, 2275</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 울산광역시. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 레이더 차트 렌더링
+            renderFeasibilityRadarChart();
+            
+            // 예산 차트 렌더링
+            renderBudgetCharts();
+            
+            // ROI 차트 렌더링
+            renderROIChart();
+            
+            // ROI 계산기 초기화
+            initROICalculator();
+        });
+
+        // 실현가능성 레이더 차트
+        function renderFeasibilityRadarChart() {
+            const ctx = document.getElementById('feasibilityRadarChart').getContext('2d');
+            
+            const data = {
+                labels: [
+                    '기술적 실현가능성',
+                    '제도적 실현가능성',
+                    '경제적 실현가능성',
+                    '사회적 수용성'
+                ],
+                datasets: [{
+                    label: '실현가능성 평가',
+                    data: [5, 4, 5, 5],
+                    fill: true,
+                    backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                    borderColor: 'rgb(59, 130, 246)',
+                    pointBackgroundColor: 'rgb(59, 130, 246)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(59, 130, 246)'
+                }]
+            };
+            
+            const config = {
+                type: 'radar',
+                data: data,
+                options: {
+                    responsive: true,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 5,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.parsed.r + '/5';
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            
+            new Chart(ctx, config);
+        }
+
+        // 예산 차트 렌더링
+        function renderBudgetCharts() {
+            // 초기 구축비 차트
+            const initialBudgetCtx = document.getElementById('initialBudgetChart').getContext('2d');
+            
+            const initialBudgetData = {
+                labels: ['플랫폼 구축', 'AI 엔진 개발', '보안 시스템', '서버 및 네트워크', '사무공간 조성'],
+                datasets: [{
+                    label: '초기 구축비 (억원)',
+                    data: [10, 3, 2, 3, 2],
+                    backgroundColor: [
+                        'rgba(59, 130, 246, 0.7)',
+                        'rgba(16, 185, 129, 0.7)',
+                        'rgba(239, 68, 68, 0.7)',
+                        'rgba(245, 158, 11, 0.7)',
+                        'rgba(139, 92, 246, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgb(59, 130, 246)',
+                        'rgb(16, 185, 129)',
+                        'rgb(239, 68, 68)',
+                        'rgb(245, 158, 11)',
+                        'rgb(139, 92, 246)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+            
+            const initialBudgetConfig = {
+                type: 'pie',
+                data: initialBudgetData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 15
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((acc, data) => acc + data, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${context.label}: ${value}억원 (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            
+            new Chart(initialBudgetCtx, initialBudgetConfig);
+            
+            // 연간 운영비 차트
+            const operationBudgetCtx = document.getElementById('operationBudgetChart').getContext('2d');
+            
+            const operationBudgetData = {
+                labels: ['인건비', '시스템 유지보수', '마케팅 및 교육', '기타 운영비'],
+                datasets: [{
+                    label: '연간 운영비 (억원)',
+                    data: [8, 2, 1, 1],
+                    backgroundColor: [
+                        'rgba(16, 185, 129, 0.7)',
+                        'rgba(239, 68, 68, 0.7)',
+                        'rgba(245, 158, 11, 0.7)',
+                        'rgba(139, 92, 246, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgb(16, 185, 129)',
+                        'rgb(239, 68, 68)',
+                        'rgb(245, 158, 11)',
+                        'rgb(139, 92, 246)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+            
+            const operationBudgetConfig = {
+                type: 'pie',
+                data: operationBudgetData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 15
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((acc, data) => acc + data, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${context.label}: ${value}억원 (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            
+            new Chart(operationBudgetCtx, operationBudgetConfig);
+        }
+
+        // ROI 차트 렌더링
+        function renderROIChart() {
+            const ctx = document.getElementById('roiChart').getContext('2d');
+            
+            const data = {
+                labels: ['초기', '1년차', '2년차', '3년차', '4년차', '5년차'],
+                datasets: [
+                    {
+                        label: '누적 순편익 (억원)',
+                        data: [-20, 62.5, 145, 227.5, 310, 392.5],
+                        borderColor: 'rgb(16, 185, 129)',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: '연간 투자 및 운영비 (억원)',
+                        data: [20, 12, 12, 12, 12, 12],
+                        borderColor: 'rgb(239, 68, 68)',
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: '연간 절감 효과 (억원)',
+                        data: [0, 94.5, 94.5, 94.5, 94.5, 94.5],
+                        borderColor: 'rgb(59, 130, 246)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            };
+            
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: '금액 (억원)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '연도'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                boxWidth: 12
+                            }
+                        }
+                    }
+                }
+            };
+            
+            new Chart(ctx, config);
+        }
+
+        // ROI 계산기 초기화
+        function initROICalculator() {
+            const calculateBtn = document.getElementById('calculateROI');
+            
+            if (calculateBtn) {
+                calculateBtn.addEventListener('click', function() {
+                    const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);
+                    const annualOperation = parseFloat(document.getElementById('annualOperation').value);
+                    const annualSavings = parseFloat(document.getElementById('annualSavings').value);
+                    const calculationPeriod = parseInt(document.getElementById('calculationPeriod').value);
+                    
+                    // 계산 결과
+                    const annualNetSavings = annualSavings - annualOperation;
+                    const paybackPeriod = initialInvestment / annualNetSavings;
+                    const netBenefit = (annualNetSavings * calculationPeriod) - initialInvestment;
+                    const roi = (netBenefit / initialInvestment) * 100;
+                    const annualReturn = roi / calculationPeriod;
+                    
+                    // 결과 업데이트
+                    document.getElementById('paybackPeriod').textContent = paybackPeriod.toFixed(2) + '년 (약 ' + Math.round(paybackPeriod * 12) + '개월)';
+                    document.getElementById('netBenefit').textContent = netBenefit.toFixed(1) + '억원';
+                    document.getElementById('roiValue').textContent = roi.toFixed(1) + '%';
+                    document.getElementById('annualReturn').textContent = annualReturn.toFixed(1) + '%';
+                    
+                    // 결론 업데이트
+                    let conclusion = '';
+                    
+                    if (roi > 1000) {
+                        conclusion = '초기 투자 대비 매우 높은 경제적 가치를 창출할 것으로 예상됩니다. ';
+                    } else if (roi > 500) {
+                        conclusion = '초기 투자 대비 높은 경제적 가치를 창출할 것으로 예상됩니다. ';
+                    } else if (roi > 100) {
+                        conclusion = '투자 대비 적정한 경제적 가치를 창출할 것으로 예상됩니다. ';
+                    } else {
+                        conclusion = '투자 대비 경제적 효과가 나타날 것으로 예상됩니다. ';
+                    }
+                    
+                    if (paybackPeriod < 0.5) {
+                        conclusion += '매우 짧은 기간 내에 투자금을 회수할 수 있고, ';
+                    } else if (paybackPeriod < 1) {
+                        conclusion += '1년 이내에 투자금을 회수할 수 있고, ';
+                    } else {
+                        conclusion += paybackPeriod.toFixed(1) + '년 내에 투자금을 회수할 수 있고, ';
+                    }
+                    
+                    conclusion += calculationPeriod + '년간 ' + netBenefit.toFixed(1) + '억원의 순편익이 발생합니다.';
+                    
+                    document.getElementById('conclusion').textContent = conclusion;
+                });
+            }
+        }
+    </script>
+</body>
+</html>

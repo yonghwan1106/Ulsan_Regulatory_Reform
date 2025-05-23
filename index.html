@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>울산 창업 원스톱 디지털 플랫폼</title>
+    <meta name="description" content="울산광역시 규제개혁 아이디어 공모전 - 울산 창업 원스톱 디지털 플랫폼 구축을 통한 창업 규제 혁신">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-noto bg-gray-50 text-gray-800">
+    <!-- 헤더 섹션 -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="img/logo.jpg" alt="울산시 로고" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-2xl font-bold">울산 창업 원스톱 디지털 플랫폼</h1>
+                    <p class="text-blue-100">울산광역시 규제개혁 아이디어 공모전</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-end">
+                <a href="index.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">홈</a>
+                <a href="current-state.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">현황 및 문제점</a>
+                <a href="improvement.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">개선 방안</a>
+                <a href="expected-effects.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">기대 효과</a>
+                <a href="feasibility.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">실현가능성</a>
+                <a href="trend-analysis.html" class="px-3 py-2 font-medium hover:bg-blue-600 rounded transition">트렌드 분석</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 풀스크린 히어로 슬라이더 -->
+    <section class="hero-slider relative h-screen overflow-hidden">
+        <!-- 슬라이드 1: 플랫폼 소개 -->
+        <div class="hero-slide active" data-bg="img/img01.png">
+            <div class="slide-overlay absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="slide-content absolute inset-0 flex items-center justify-center text-white">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">울산 창업 원스톱 디지털 플랫폼</h1>
+                    <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-300">창업의 모든 것을 하나로 연결하는 혁신적인 디지털 생태계</p>
+                    <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-600">
+                        <a href="improvement.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-4 rounded-lg transition text-lg">자세히 알아보기</a>
+                        <a href="#quick-demo" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-medium px-8 py-4 rounded-lg transition text-lg">데모 체험하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이드 2: AI 기반 추천 시스템 -->
+        <div class="hero-slide" data-bg="img/img02.png">
+            <div class="slide-overlay absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="slide-content absolute inset-0 flex items-center justify-center text-white">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">AI 기반 맞춤형 추천</h1>
+                    <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-300">당신의 창업 아이디어에 최적화된 지원 프로그램을 AI가 정확하게 추천합니다</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-fade-in-up delay-600">
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg">
+                            <div class="text-4xl font-bold text-green-400">78%</div>
+                            <div class="text-lg">예상 성공률</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg">
+                            <div class="text-4xl font-bold text-blue-400">3초</div>
+                            <div class="text-lg">추천 시간</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg">
+                            <div class="text-4xl font-bold text-yellow-400">15개</div>
+                            <div class="text-lg">연계 기관</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이드 3: 통합 서비스 -->
+        <div class="hero-slide" data-bg="img/img03.png">
+            <div class="slide-overlay absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="slide-content absolute inset-0 flex items-center justify-center text-white">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">원스톱 통합 서비스</h1>
+                    <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-300">복잡했던 창업 절차를 단 한 번의 신청으로 간소화합니다</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto animate-fade-in-up delay-600">
+                        <div class="text-center">
+                            <div class="text-6xl font-bold text-red-400">77%</div>
+                            <div class="text-lg">처리시간 단축</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-6xl font-bold text-green-400">80%</div>
+                            <div class="text-lg">방문횟수 감소</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-6xl font-bold text-blue-400">94억</div>
+                            <div class="text-lg">연간 비용절감</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-6xl font-bold text-purple-400">20%</div>
+                            <div class="text-lg">성공률 향상</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이드 4: 울산 특화 연계 -->
+        <div class="hero-slide" data-bg="img/img04.png">
+            <div class="slide-overlay absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="slide-content absolute inset-0 flex items-center justify-center text-white">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">울산 특화 생태계</h1>
+                    <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-300">현대차그룹, 현대중공업그룹과 함께하는 대기업 연계 창업 지원</p>
+                    <div class="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto animate-fade-in-up delay-600">
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center min-w-[150px]">
+                            <div class="text-2xl font-bold mb-2">🏭</div>
+                            <div class="text-lg">스마트 제조</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center min-w-[150px]">
+                            <div class="text-2xl font-bold mb-2">🔋</div>
+                            <div class="text-lg">이차전지</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center min-w-[150px]">
+                            <div class="text-2xl font-bold mb-2">💨</div>
+                            <div class="text-lg">수소에너지</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center min-w-[150px]">
+                            <div class="text-2xl font-bold mb-2">🚢</div>
+                            <div class="text-lg">스마트 조선</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이드 5: 성과와 비전 -->
+        <div class="hero-slide" data-bg="img/img05.png">
+            <div class="slide-overlay absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="slide-content absolute inset-0 flex items-center justify-center text-white">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">미래를 만드는 울산</h1>
+                    <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-300">2025년, 규제개혁을 통해 창업 천국 울산을 실현합니다</p>
+                    <div class="max-w-4xl mx-auto animate-fade-in-up delay-600">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg">
+                                <div class="text-4xl font-bold text-green-400 mb-2">1,200개</div>
+                                <div class="text-lg">연간 신규 창업기업 목표</div>
+                            </div>
+                            <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg">
+                                <div class="text-4xl font-bold text-blue-400 mb-2">2,500명</div>
+                                <div class="text-lg">연간 일자리 창출 목표</div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="expected-effects.html" class="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white font-medium px-8 py-4 rounded-lg transition text-lg">기대효과 자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 슬라이더 내비게이션 -->
+        <div class="slider-nav absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4 z-20">
+            <button class="nav-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition active" data-slide="0"></button>
+            <button class="nav-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" data-slide="1"></button>
+            <button class="nav-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" data-slide="2"></button>
+            <button class="nav-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" data-slide="3"></button>
+            <button class="nav-dot w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition" data-slide="4"></button>
+        </div>
+
+        <!-- 슬라이더 화살표 -->
+        <button class="slider-arrow slider-prev absolute left-8 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white bg-opacity-20 hover:bg-opacity-40 rounded-full flex items-center justify-center text-white transition z-20">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        <button class="slider-arrow slider-next absolute right-8 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white bg-opacity-20 hover:bg-opacity-40 rounded-full flex items-center justify-center text-white transition z-20">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+
+        <!-- 슬라이더 진행바 -->
+        <div class="slider-progress absolute bottom-0 left-0 w-full h-1 bg-white bg-opacity-20 z-20">
+            <div class="progress-bar h-full bg-white transition-all duration-5000 ease-linear" style="width: 0%;"></div>
+        </div>
+    </section>
+
+    <!-- 핵심 문제점 요약 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">현재 창업 지원 체계의 문제점</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-blue-50 rounded-lg shadow-md">
+                    <div class="bg-blue-100 text-blue-700 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">정보 분산 및 중복</h3>
+                    <p>창업자는 여러 기관을 방문하며 동일한 서류를 반복 제출하고, 유사한 심사를 여러 번 받아야 합니다.</p>
+                </div>
+
+                <div class="p-6 bg-green-50 rounded-lg shadow-md">
+                    <div class="bg-green-100 text-green-700 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">정보 접근성 한계</h3>
+                    <p>각 기관별로 자체 사업만 안내하여 타 기관 연계 정보가 부족하고, 창업자가 직접 찾아야 하는 구조입니다.</p>
+                </div>
+
+                <div class="p-6 bg-orange-50 rounded-lg shadow-md">
+                    <div class="bg-orange-100 text-orange-700 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">행정 절차의 복잡성</h3>
+                    <p>창업 관련 인허가는 평균 30일이 소요되며, 기관 방문도 5회 이상이 필요한 복잡한 구조입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 핵심 아이디어 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">울산 창업 원스톱 디지털 플랫폼</h2>
+            
+            <div class="bg-white p-8 rounded-lg shadow-lg mb-10">
+                <h3 class="text-2xl font-bold mb-4 text-blue-700">핵심 구상</h3>
+                <p class="text-lg mb-6">
+                    "AI 기반 맞춤형 창업 지원 플랫폼을 통해 울산의 모든 창업 관련 서비스를 통합하고, 창업자 개인별 특성에 맞는 최적화된 지원 경로를 자동으로 설계하는 시스템"
+                </p>
+                <div class="flex flex-wrap gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">전국 최초 원스톱 플랫폼</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">AI 기반 맞춤형 추천</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">울산 특화 서비스</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">실시간 통합 관리</span>
+                </div>
+            </div>
+
+            <!-- 플랫폼 시뮬레이션 데모 -->
+            <div id="quick-demo" class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-700">플랫폼 시뮬레이션</h3>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="demo-container relative">
+                        <div class="demo-step active" id="step1">
+                            <h4 class="text-xl font-bold mb-3">1단계: 기본 정보 입력</h4>
+                            <div class="p-4 bg-white rounded mb-4">
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2">창업 분야</label>
+                                    <select class="shadow border rounded w-full py-2 px-3 text-gray-700">
+                                        <option>스마트 제조</option>
+                                        <option>친환경 에너지</option>
+                                        <option>IT 서비스</option>
+                                        <option>바이오헬스</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2">창업 단계</label>
+                                    <select class="shadow border rounded w-full py-2 px-3 text-gray-700">
+                                        <option>예비 창업자</option>
+                                        <option>창업 1년 이내</option>
+                                        <option>창업 3년 이내</option>
+                                        <option>창업 5년 이내</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="demo-next bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                다음 단계
+                            </button>
+                        </div>
+                        
+                        <div class="demo-step" id="step2">
+                            <h4 class="text-xl font-bold mb-3">2단계: AI 맞춤형 추천</h4>
+                            <div class="p-4 bg-white rounded mb-4">
+                                <div class="flex items-center justify-center my-4">
+                                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-700"></div>
+                                </div>
+                                <p class="text-center text-gray-700 mb-2">AI가 최적의 지원 프로그램을 분석 중입니다...</p>
+                                <div class="bg-gray-200 h-2 rounded-full mt-6 mb-2">
+                                    <div class="loading-bar bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <button class="demo-next bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                결과 확인
+                            </button>
+                        </div>
+                        
+                        <div class="demo-step" id="step3">
+                            <h4 class="text-xl font-bold mb-3">3단계: 맞춤형 로드맵</h4>
+                            <div class="p-4 bg-white rounded mb-4">
+                                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                                    <p class="font-bold">예상 성공률: 78%</p>
+                                    <p class="text-sm">스마트 제조 분야 창업 초기 기업 평균 대비 23% 높음</p>
+                                </div>
+                                
+                                <h5 class="font-bold mb-2">추천 지원 프로그램</h5>
+                                <ul class="space-y-2 mb-4">
+                                    <li class="flex items-center">
+                                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded mr-2">최우선</span>
+                                        <span>울산 스마트 제조 혁신 바우처 (최대 5천만원)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded mr-2">추천</span>
+                                        <span>현대차그룹 협력사 상생 프로그램</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded mr-2">추천</span>
+                                        <span>울산 TP 시제품 제작 지원</span>
+                                    </li>
+                                </ul>
+                                
+                                <div class="border-t pt-4">
+                                    <h5 class="font-bold mb-2">One-Click 통합 신청</h5>
+                                    <button class="bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-1 px-3 rounded">
+                                        3개 프로그램 한 번에 신청하기
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="demo-restart bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                                처음으로
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요 성과 지표 -->
+    <section class="py-16 bg-blue-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">기대되는 핵심 성과</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <p class="text-5xl font-bold mb-2">77%</p>
+                    <div class="w-16 h-1 bg-green-400 mx-auto mb-4"></div>
+                    <p class="text-xl">처리 시간 단축</p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-5xl font-bold mb-2">80%</p>
+                    <div class="w-16 h-1 bg-green-400 mx-auto mb-4"></div>
+                    <p class="text-xl">방문 횟수 감소</p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-5xl font-bold mb-2">94억</p>
+                    <div class="w-16 h-1 bg-green-400 mx-auto mb-4"></div>
+                    <p class="text-xl">연간 비용 절감</p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-5xl font-bold mb-2">20%</p>
+                    <div class="w-16 h-1 bg-green-400 mx-auto mb-4"></div>
+                    <p class="text-xl">창업 성공률 향상</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요 페이지 바로가기 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">상세 내용 바로가기</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="current-state.html" class="block group">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg">
+                        <h3 class="text-xl font-bold mb-3 text-blue-700">현황 및 문제점</h3>
+                        <p class="mb-4">울산 창업 생태계의 현황과 기존 지원 체계의 문제점을 분석합니다.</p>
+                        <span class="text-blue-700 inline-flex items-center">
+                            자세히 보기
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:ml-2 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="improvement.html" class="block group">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg">
+                        <h3 class="text-xl font-bold mb-3 text-blue-700">개선 방안</h3>
+                        <p class="mb-4">AI 기반 맞춤형 플랫폼 구축을 통한 창업 지원 체계 혁신 방안을 제시합니다.</p>
+                        <span class="text-blue-700 inline-flex items-center">
+                            자세히 보기
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:ml-2 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="expected-effects.html" class="block group">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg">
+                        <h3 class="text-xl font-bold mb-3 text-blue-700">기대 효과</h3>
+                        <p class="mb-4">행정 효율성 개선, 경제적 파급효과, 사회적 가치 창출 등 다양한 효과를 분석합니다.</p>
+                        <span class="text-blue-700 inline-flex items-center">
+                            자세히 보기
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:ml-2 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="feasibility.html" class="block group">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg">
+                        <h3 class="text-xl font-bold mb-3 text-blue-700">실현가능성 분석</h3>
+                        <p class="mb-4">기술적, 제도적, 경제적, 사회적 측면에서의 실현가능성을 종합적으로 분석합니다.</p>
+                        <span class="text-blue-700 inline-flex items-center">
+                            자세히 보기
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:ml-2 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="trend-analysis.html" class="block group">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg">
+                        <h3 class="text-xl font-bold mb-3 text-blue-700">트렌드 분석</h3>
+                        <p class="mb-4">네이버 검색 트렌드를 통해 창업 및 규제개혁 관련 시민들의 관심사를 분석합니다.</p>
+                        <span class="text-blue-700 inline-flex items-center">
+                            자세히 보기
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 group-hover:ml-2 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">울산 창업 원스톱 디지털 플랫폼</h3>
+                    <p>2025년 울산광역시 규제개혁 아이디어 공모전  </p>
+                    <p class="mt-2"></p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">사이트맵</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white">홈</a></li>
+                        <li><a href="current-state.html" class="hover:text-white">현황 및 문제점</a></li>
+                        <li><a href="improvement.html" class="hover:text-white">개선 방안</a></li>
+                        <li><a href="expected-effects.html" class="hover:text-white">기대 효과</a></li>
+                        <li><a href="feasibility.html" class="hover:text-white">실현가능성</a></li>
+                        <li><a href="trend-analysis.html" class="hover:text-white">트렌드 분석</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">문의</h3>
+                    <p>울산광역시 남구 중앙로 201</p>
+                    <p>울산광역시청 법무통계담당관</p>
+                    <p>법제규제혁신팀</p>
+                    <p class="mt-2">tladudal@korea.kr</p>
+                    <p>☎ 052-229-2274, 2275</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 울산광역시. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
