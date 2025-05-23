@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="progress-good" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="progress-medium" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="progress-bad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fee2e2"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect x="0" y="0" width="1200" height="600" fill="#f8fafc" rx="10" ry="10"/>
+  
+  <!-- 대시보드 헤더 -->
+  <rect x="0" y="0" width="1200" height="70" fill="#1e40af" rx="10" ry="10"/>
+  <text x="30" y="45" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" fill="white">울산 창업 원스톱 디지털 플랫폼 성과 측정 대시보드</text>
+  
+  <!-- 현재 시간 표시 -->
+  <text x="1170" y="45" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="end" fill="white">2025년 08월 15일 14:30</text>
+  
+  <!-- 대시보드 메뉴 -->
+  <rect x="0" y="70" width="1200" height="40" fill="#dbeafe"/>
+  <text x="40" y="95" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" fill="#1e40af">대시보드</text>
+  <text x="170" y="95" font-family="'Noto Sans KR', sans-serif" font-size="16" fill="#1e40af">통계</text>
+  <text x="270" y="95" font-family="'Noto Sans KR', sans-serif" font-size="16" fill="#1e40af">보고서</text>
+  <text x="370" y="95" font-family="'Noto Sans KR', sans-serif" font-size="16" fill="#1e40af">설정</text>
+  
+  <!-- 주요 지표 섹션 -->
+  <text x="30" y="140" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="bold" fill="#1e40af">핵심 성과 지표 (KPI)</text>
+  
+  <!-- KPI 카드 1: 시스템 이용률 -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="250" height="170" fill="white" rx="8" ry="8" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" fill="#1e40af">시스템 이용률</text>
+    <text x="230" y="30" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="end" fill="#047857">목표: 80%</text>
+    
+    <!-- 그래프 값 -->
+    <text x="125" y="80" font-family="'Noto Sans KR', sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#059669">73%</text>
+    
+    <!-- 진행바 -->
+    <rect x="20" y="100" width="210" height="12" fill="#e5e7eb" rx="6" ry="6"/>
+    <rect x="20" y="100" width="153" height="12" fill="url(#progress-medium)" rx="6" ry="6"/>
+    
+    <!-- 추세 -->
+    <text x="20" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#6b7280">전월 대비</text>
+    <text x="100" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#10b981">+15%</text>
+    <g transform="translate(15,0)"><polyline points="130,137 140,130 150,137" stroke="#10b981" stroke-width="2" fill="none"/></g>
+  </g>
+  
+  <!-- KPI 카드 2: 행정 효율성 -->
+  <g transform="translate(310, 160)">
+    <rect x="0" y="0" width="250" height="170" fill="white" rx="8" ry="8" filter="url(#shadow)"/>
+    <text x="10" y="30" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="bold" fill="#1e40af">행정 효율성(처리 시간)</text>
+    <text x="250" y="30" font-family="'Noto Sans KR', sans-serif" font-size="13" text-anchor="end" fill="#047857">목표: 70% 단축</text>
+    
+    <!-- 그래프 값 -->
+    <text x="125" y="80" font-family="'Noto Sans KR', sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#059669">65%</text>
+    
+    <!-- 진행바 -->
+    <rect x="20" y="100" width="210" height="12" fill="#e5e7eb" rx="6" ry="6"/>
+    <rect x="20" y="100" width="137" height="12" fill="url(#progress-medium)" rx="6" ry="6"/>
+    
+    <!-- 추세 -->
+    <text x="20" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#6b7280">전월 대비</text>
+    <text x="100" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#10b981">+8%</text>
+        <g transform="translate(15,0)"><polyline points="130,137 140,130 150,137" stroke="#10b981" stroke-width="2" fill="none"/></g>
+  </g>
+  
+  <!-- KPI 카드 3: 창업 성공률 -->
+  <g transform="translate(590, 160)">
+    <rect x="0" y="0" width="250" height="170" fill="white" rx="8" ry="8" filter="url(#shadow)"/>
+    <text x="10" y="30" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="bold" fill="#1e40af">창업 성공률(3년 생존율)</text>
+    <text x="250" y="30" font-family="'Noto Sans KR', sans-serif" font-size="13" text-anchor="end" fill="#047857">목표: 20% 향상</text>
+    
+    <!-- 그래프 값 -->
+    <text x="125" y="80" font-family="'Noto Sans KR', sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#059669">18%</text>
+    
+    <!-- 진행바 -->
+    <rect x="20" y="100" width="210" height="12" fill="#e5e7eb" rx="6" ry="6"/>
+    <rect x="20" y="100" width="189" height="12" fill="url(#progress-good)" rx="6" ry="6"/>
+    
+    <!-- 추세 -->
+    <text x="20" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#6b7280">전분기 대비</text>
+    <text x="100" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#10b981">+5%</text>
+        <g transform="translate(15,0)"><polyline points="130,137 140,130 150,137" stroke="#10b981" stroke-width="2" fill="none"/></g>
+  </g>
+  
+  <!-- KPI 카드 4: 경제적 효과 -->
+  <g transform="translate(870, 160)">
+    <rect x="0" y="0" width="250" height="170" fill="white" rx="8" ry="8" filter="url(#shadow)"/>
+    <text x="10" y="30" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="bold" fill="#1e40af">경제적 효과(비용 절감)</text>
+    <text x="250" y="30" font-family="'Noto Sans KR', sans-serif" font-size="13" text-anchor="end" fill="#047857">목표: 90억원/년</text>
+    
+    <!-- 그래프 값 -->
+    <text x="125" y="80" font-family="'Noto Sans KR', sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#059669">78억원</text>
+    
+    <!-- 진행바 -->
+    <rect x="20" y="100" width="210" height="12" fill="#e5e7eb" rx="6" ry="6"/>
+    <rect x="20" y="100" width="180" height="12" fill="url(#progress-good)" rx="6" ry="6"/>
+    
+    <!-- 추세 -->
+    <text x="20" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#6b7280">전분기 대비</text>
+    <text x="100" y="140" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#10b981">+12%</text>
+       <g transform="translate(15,0)"> <polyline points="130,137 140,130 150,137" stroke="#10b981" stroke-width="2" fill="none"/></g>
+  </g>
+  
+  <!-- 창업자 통계 섹션 -->
+  <text x="30" y="370" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="bold" fill="#1e40af">창업자 통계</text>
+  
+  <!-- 막대 그래프 배경 -->
+  <rect x="30" y="390" width="550" height="180" fill="white" rx="8" ry="8" filter="url(#shadow)"/>
+  
+  <!-- 막대 그래프 타이틀 -->
+  <text x="50" y="420" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" fill="#1e40af">월별 신규 창업자 수</text>
+  
+  <!-- 막대 그래프 -->
+  <g transform="translate(50, 440)">
+    <!-- 그래프 축 -->
+    <line x1="0" y1="100" x2="510" y2="100" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="100" stroke="#d1d5db" stroke-width="1"/>
+    
+    <!-- 그래프 레이블 -->
+    <text x="30" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">1월</text>
+    <text x="100" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">2월</text>
+    <text x="170" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">3월</text>
+    <text x="240" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">4월</text>
+    <text x="310" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">5월</text>
+    <text x="380" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">6월</text>
+    <text x="450" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#6b7280">7월</text>
+    
+    <!-- 그래프 막대 -->
+    <rect x="15" y="50" width="30" height="50" fill="#3b82f6" rx="3" ry="3"/>
+    <rect x="85" y="60" width="30" height="40" fill="#3b82f6" rx="3" ry="3"/>
+    <rect x="155" y="40" width="30" height="60" fill="#3b82f6" rx="3" ry="3"/>
+    <rect x="225" y="30" width="30" height="70" fill="#3b82f6" rx="3" ry="3"/>
+    <rect x="295" y="20" width="30" height="80" fill="#3b82f6" rx="3" ry="3"/>
+    <rect x="365" y="10" width="30" height="90" fill="#3b82f6" rx="3" ry="3"/>
+    <rect x="435" y="0" width="30" height="100" fill="#10b981" rx="3" ry="3"/>
+    
+    <!-- 추세선 -->
+    <polyline points="30,50 100,60 170,40 240,30 310,20 380,10 450,0" stroke="#ef4444" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 파이 차트 배경 -->
+  <rect x="610" y="390" width="550" height="180" fill="white" rx="8" ry="8" filter="url(#shadow)"/>
+  
+  <!-- 파이 차트 타이틀 -->
+  <text x="625" y="420" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="bold" fill="#1e40af">창업 분야별 비율</text>
+  
+  <!-- 파이 차트 (간소화된 버전) -->
+  <g transform="translate(780, 490)">
+    <!-- 파이 차트 섹터 -->
+    <path d="M0,0 L80,0 A80,80 0 0,1 40,69.28 z" fill="#3b82f6"/>
+    <path d="M0,0 L40,69.28 A80,80 0 0,1 -40,69.28 z" fill="#10b981"/>
+    <path d="M0,0 L-40,69.28 A80,80 0 0,1 -80,0 z" fill="#8b5cf6"/>
+    <path d="M0,0 L-80,0 A80,80 0 0,1 0,-80 z" fill="#f59e0b"/>
+    <path d="M0,0 L0,-80 A80,80 0 0,1 80,0 z" fill="#ef4444"/>
+    
+    <!-- 레전드 -->
+    <g transform="translate(150, -50)">
+      <rect x="0" y="0" width="15" height="15" fill="#3b82f6"/>
+      <text x="25" y="12" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">제조업 (30%)</text>
+      
+      <rect x="0" y="25" width="15" height="15" fill="#10b981"/>
+      <text x="25" y="37" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">IT/SW (25%)</text>
+      
+      <rect x="0" y="50" width="15" height="15" fill="#8b5cf6"/>
+      <text x="25" y="62" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">서비스업 (20%)</text>
+      
+      <rect x="0" y="75" width="15" height="15" fill="#f59e0b"/>
+      <text x="25" y="87" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">에너지 (15%)</text>
+      
+      <rect x="0" y="100" width="15" height="15" fill="#ef4444"/>
+      <text x="25" y="112" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">기타 (10%)</text>
+    </g>
+  </g>
+  
+  <!-- 워터마크 -->
+  <text x="1140" y="590" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="end" fill="#9ca3af">© 울산 창업 원스톱 디지털 플랫폼</text>
+</svg>

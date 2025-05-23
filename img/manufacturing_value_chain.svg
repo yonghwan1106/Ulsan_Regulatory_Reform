@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="orange-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1000" height="400" fill="#f9fafb" rx="10" ry="10"/>
+  
+  <!-- 제목 -->
+  <text x="500" y="40" font-family="'Noto Sans KR', sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#d97706">울산제조업 밸류체인 연계 시스템</text>
+  
+  <!-- 3개 대기업 박스 -->
+  <rect x="100" y="80" width="800" height="80" rx="10" ry="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" filter="url(#shadow)"/>
+  
+  <rect x="120" y="100" width="220" height="40" rx="5" ry="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="230" y="125" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">현대자동차그룹</text>
+  
+  <rect x="390" y="100" width="220" height="40" rx="5" ry="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="500" y="125" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">현대중공업그룹</text>
+  
+  <rect x="660" y="100" width="220" height="40" rx="5" ry="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="770" y="125" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">SK에너지</text>
+  
+  <!-- 연결 화살표 -->
+  <path d="M230 160 L230 185" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="225,180 230,190 235,180" fill="#9ca3af"/>
+  
+  <path d="M500 160 L500 185" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="495,180 500,190 505,180" fill="#9ca3af"/>
+  
+  <path d="M770 160 L770 185" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="765,180 770,190 775,180" fill="#9ca3af"/>
+  
+  <!-- 밸류체인 연계 시스템 -->
+  <rect x="100" y="190" width="800" height="100" rx="10" ry="10" fill="url(#orange-gradient)" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500" y="220" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">울산제조업 밸류체인 연계 시스템</text>
+  
+  <rect x="120" y="240" width="180" height="35" rx="5" ry="5" fill="white" stroke="#f59e0b" stroke-width="1"/>
+  <text x="210" y="264" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#d97706">오픈이노베이션 매칭</text>
+  
+  <rect x="320" y="240" width="180" height="35" rx="5" ry="5" fill="white" stroke="#f59e0b" stroke-width="1"/>
+  <text x="410" y="264" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#d97706">산업단지 특례 지원</text>
+  
+  <rect x="520" y="240" width="180" height="35" rx="5" ry="5" fill="white" stroke="#f59e0b" stroke-width="1"/>
+  <text x="610" y="264" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#d97706">협력사 등록 간소화</text>
+  
+  <rect x="720" y="240" width="160" height="35" rx="5" ry="5" fill="white" stroke="#f59e0b" stroke-width="1"/>
+  <text x="800" y="264" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#d97706">제조업 특화 R&D</text>
+  
+  <!-- 연결 화살표 -->
+  <path d="M200 290 L200 310" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="195,305 200,315 205,305" fill="#9ca3af"/>
+  
+  <path d="M400 290 L400 310" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="395,305 400,315 405,305" fill="#9ca3af"/>
+  
+  <path d="M600 290 L600 310" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="595,305 600,315 605,305" fill="#9ca3af"/>
+  
+  <path d="M800 290 L800 310" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="795,305 800,315 805,305" fill="#9ca3af"/>
+  
+  <!-- 창업기업 영역 -->
+  <rect x="100" y="315" width="800" height="65" rx="10" ry="10" fill="url(#blue-gradient)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500" y="345" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">창업기업</text>
+  
+  <circle cx="200" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="200" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">A</text>
+  
+  <circle cx="250" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="250" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">B</text>
+  
+  <circle cx="300" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">C</text>
+  
+  <circle cx="400" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="400" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">D</text>
+  
+  <circle cx="450" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="450" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">E</text>
+  
+  <circle cx="500" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="500" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">F</text>
+  
+  <circle cx="600" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="600" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">G</text>
+  
+  <circle cx="650" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="650" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">H</text>
+  
+  <circle cx="700" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="700" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">I</text>
+  
+  <circle cx="800" cy="345" r="15" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="800" y="350" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">J</text>
+  
+  <!-- 설명 박스 1: 현대차 연계 -->
+  <rect x="125" y="160" width="180" height="25" rx="12" ry="12" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="215" y="178" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">자동차 부품/소재 기술 연계</text>
+  
+  <!-- 설명 박스 2: 중공업 연계 -->
+  <rect x="395" y="160" width="180" height="25" rx="12" ry="12" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="485" y="178" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">조선/해양 장비 솔루션 연계</text>
+  
+  <!-- 설명 박스 3: SK 연계 -->
+  <rect x="665" y="160" width="180" height="25" rx="12" ry="12" fill="#ffffff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="755" y="178" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">에너지/화학 기술 연계</text>
+  
+  <!-- 워터마크 -->
+  <text x="980" y="390" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="end" fill="#9ca3af">© 울산 창업 원스톱 디지털 플랫폼</text>
+</svg>

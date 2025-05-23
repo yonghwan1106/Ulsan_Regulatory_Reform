@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="green-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="purple-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="orange-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect x="0" y="0" width="1200" height="600" fill="#f9fafb" rx="10" ry="10"/>
+  
+  <!-- 타이틀 -->
+  <!--text x="600" y="50" font-family="'Noto Sans KR', sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1e40af">울산 창업 원스톱 디지털 플랫폼 사회적 가치 창출 효과</text-->
+  
+  <!-- 중앙 플랫폼 아이콘 -->
+  <circle cx="600" cy="300" r="100" fill="#dbeafe" filter="url(#shadow)"/>
+  <text x="600" y="285" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1e40af">울산 창업</text>
+  <text x="600" y="315" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1e40af">원스톱</text>
+  <text x="600" y="345" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1e40af">디지털 플랫폼</text>
+  
+  <!-- 가치 영역 1: 청년 정착 효과 -->
+  <g transform="translate(250, 200)">
+    <circle cx="0" cy="0" r="80" fill="url(#blue-gradient)" opacity="0.9" filter="url(#shadow)"/>
+    <text x="0" y="-15" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">청년 정착</text>
+    <text x="0" y="15" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="middle" fill="white">300-400명/년</text>
+    
+    <!-- 연결선 -->
+    <line x1="70" y1="30" x2="270" y2="90" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- 세부 효과 -->
+    <g transform="translate(-80, 80)">
+      <rect x="0" y="0" width="180" height="120" rx="10" ry="10" fill="white" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+      <text x="90" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">청년 정착 세부 효과</text>
+      <line x1="20" y1="45" x2="160" y2="45" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="20" y="70" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 지역 인구 유출 방지</text>
+      <text x="20" y="95" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 지역 활력 증진</text>
+    </g>
+  </g>
+  
+  <!-- 가치 영역 2: 혁신 생태계 조성 -->
+  <g transform="translate(950, 200)">
+    <circle cx="0" cy="0" r="80" fill="url(#green-gradient)" opacity="0.9" filter="url(#shadow)"/>
+    <text x="0" y="-15" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">혁신 생태계</text>
+    <text x="0" y="15" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="middle" fill="white">조성</text>
+    
+    <!-- 연결선 -->
+    <line x1="-70" y1="30" x2="-265" y2="90" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- 세부 효과 -->
+    <g transform="translate(-100, 80)">
+      <rect x="0" y="0" width="200" height="120" rx="10" ry="10" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <text x="100" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">혁신 생태계 세부 효과</text>
+      <line x1="20" y1="45" x2="180" y2="45" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="20" y="70" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 첨단 기술 기반 창업 증가</text>
+      <text x="20" y="95" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 산학연 협력 활성화</text>
+    </g>
+  </g>
+  
+  <!-- 가치 영역 3: 사회적 포용성 증대 -->
+  <g transform="translate(600, 520)">
+    <circle cx="0" cy="0" r="80" fill="url(#purple-gradient)" opacity="0.9" filter="url(#shadow)"/>
+    <text x="0" y="-15" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">사회적 포용성</text>
+    <text x="0" y="15" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="middle" fill="white">증대</text>
+    
+    <!-- 연결선 -->
+    <line x1="0" y1="-70" x2="0" y2="-170" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- 세부 효과 -->
+    <g transform="translate(-280, -70)">
+      <rect x="0" y="0" width="200" height="120" rx="10" ry="10" fill="white" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+      <text x="100" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6d28d9">사회적 포용성 세부 효과</text>
+      <line x1="20" y1="45" x2="180" y2="45" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="20" y="70" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 경력단절여성 창업 지원</text>
+      <text x="20" y="95" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 시니어 창업 활성화</text>
+    </g>
+  </g>
+  
+  <!-- 가치 영역 4: 지역 브랜드 가치 향상 -->
+  <g transform="translate(600, 80)">
+    <circle cx="0" cy="0" r="80" fill="url(#orange-gradient)" opacity="0.9" filter="url(#shadow)"/>
+    <text x="0" y="-15" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">지역 브랜드</text>
+    <text x="0" y="15" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="middle" fill="white">가치 향상</text>
+    
+    
+
+    <!-- 연결선 -->
+    <line x1="0" y1="70" x2="0" y2="170" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5,3"/>
+
+
+    <!-- 세부 효과 -->
+    <g transform="translate(80, -50)">
+      <rect x="0" y="0" width="200" height="120" rx="10" ry="10" fill="white" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+      <text x="100" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#c2410c">브랜드 가치 세부 효과</text>
+      <line x1="20" y1="45" x2="180" y2="45" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="20" y="70" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 혁신도시 이미지 구축</text>
+      <text x="20" y="95" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#374151">· 외부 투자 유치 증가</text>
+    </g>
+  </g>
+   
+  
+  <!-- 데이터 기반 -->
+  <!--text x="60" y="580" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="start" fill="#6b7280">* 위 자료는 사회적 가치 측정 지표 및 예상 효과 분석 결과를 기반으로 작성되었습니다.</text-->
+  
+  <!-- 워터마크 -->
+  <text x="1140" y="590" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="end" fill="#9ca3af">© 울산 창업 원스톱 디지털 플랫폼</text>
+</svg>

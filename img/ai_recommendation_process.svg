@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+    <linearGradient id="gradient-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <linearGradient id="gradient-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1100" height="500" fill="#f9fafb" rx="10" ry="10"/>
+  
+  <!-- 제목 -->
+  <text x="550" y="40" font-family="'Noto Sans KR', sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1e3a8a">AI 맞춤형 추천 엔진 프로세스 흐름도</text>
+  
+  <!-- 프로세스 단계 1: 데이터 입력 -->
+  <rect x="100" y="100" width="200" height="200" rx="15" ry="15" fill="url(#gradient-blue)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="200" y="130" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">1. 데이터 입력</text>
+  
+  <rect x="120" y="150" width="160" height="130" rx="10" ry="10" fill="white" stroke="#3b82f6" stroke-width="1"/>
+  <text x="200" y="170" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">입력 데이터</text>
+  <rect x="135" y="180" width="130" height="20" rx="5" ry="5" fill="#93c5fd" opacity="0.5"/>
+  <text x="200" y="195" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">업종 및 기술 분야</text>
+  <rect x="135" y="205" width="130" height="20" rx="5" ry="5" fill="#93c5fd" opacity="0.5"/>
+  <text x="200" y="220" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">창업 경험 및 역량</text>
+  <rect x="135" y="230" width="130" height="20" rx="5" ry="5" fill="#93c5fd" opacity="0.5"/>
+  <text x="200" y="245" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">자금 규모/조달 계획</text>
+  <rect x="135" y="255" width="130" height="20" rx="5" ry="5" fill="#93c5fd" opacity="0.5"/>
+  <text x="200" y="270" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">목표 시장/비즈니스</text>
+  
+  <!-- 화살표 1->2 -->
+  <path d="M300 200 L350 200" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="345,195 355,200 345,205" fill="#9ca3af"/>
+  
+  <!-- 프로세스 단계 2: AI 분석 -->
+  <rect x="350" y="80" width="400" height="240" rx="15" ry="15" fill="url(#gradient-purple)" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="550" y="110" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#5b21b6">2. AI 분석 프로세스</text>
+  
+  <rect x="370" y="130" width="170" height="170" rx="10" ry="10" fill="white" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="455" y="150" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#5b21b6">빅데이터 학습</text>
+  <text x="455" y="175" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#5b21b6">• 과거 창업 데이터</text>
+  <text x="455" y="195" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#5b21b6">• 성공/실패 요인 분석</text>
+  <text x="455" y="215" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#5b21b6">• 울산 지역 산업 특성</text>
+  <text x="455" y="235" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#5b21b6">• 투자/지원금 효과성</text>
+  <text x="455" y="255" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#5b21b6">• 시장 동향 정보</text>
+  
+  <rect x="560" y="130" width="170" height="170" rx="10" ry="10" fill="white" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="645" y="150" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#5b21b6">AI 매칭 알고리즘</text>
+  
+  <!-- 알고리즘 코드 스타일 텍스트 -->
+  <rect x="580" y="170" width="130" height="110" rx="5" ry="5" fill="#f5f3ff"/>
+  <text x="585" y="187" font-family="monospace" font-size="11" fill="#5b21b6">function matchScore(</text>
+  <text x="585" y="202" font-family="monospace" font-size="11" fill="#5b21b6">  profile,</text>
+  <text x="585" y="217" font-family="monospace" font-size="11" fill="#5b21b6">  program</text>
+  <text x="585" y="232" font-family="monospace" font-size="11" fill="#5b21b6">) {</text>
+  <text x="585" y="247" font-family="monospace" font-size="11" fill="#5b21b6">  // 점수 계산</text>
+  <text x="585" y="262" font-family="monospace" font-size="11" fill="#5b21b6">  return score;</text>
+  <text x="585" y="277" font-family="monospace" font-size="11" fill="#5b21b6">}</text>
+  
+  <!-- 화살표 2->3 -->
+  <path d="M750 200 L800 200" stroke="#9ca3af" stroke-width="2"/>
+  <polygon points="795,195 805,200 795,205" fill="#9ca3af"/>
+  
+  <!-- 프로세스 단계 3: 맞춤형 결과 -->
+  <rect x="800" y="100" width="200" height="200" rx="15" ry="15" fill="url(#gradient-green)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="900" y="130" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">3. 맞춤형 결과</text>
+  
+  <rect x="820" y="150" width="160" height="130" rx="10" ry="10" fill="white" stroke="#10b981" stroke-width="1"/>
+  <text x="900" y="170" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#047857">출력 결과</text>
+  <rect x="835" y="180" width="130" height="20" rx="5" ry="5" fill="#6ee7b7" opacity="0.5"/>
+  <text x="900" y="195" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#047857">창업 성공 로드맵</text>
+  <rect x="835" y="205" width="130" height="20" rx="5" ry="5" fill="#6ee7b7" opacity="0.5"/>
+  <text x="900" y="220" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#047857">지원 프로그램 추천</text>
+  <rect x="835" y="230" width="130" height="20" rx="5" ry="5" fill="#6ee7b7" opacity="0.5"/>
+  <text x="900" y="245" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#047857">성공률/위험도 분석</text>
+  <rect x="835" y="255" width="130" height="20" rx="5" ry="5" fill="#6ee7b7" opacity="0.5"/>
+  <text x="900" y="270" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#047857">단계별 액션플랜</text>
+  
+  <!-- 하단 설명: 사용사례 -->
+  <rect x="100" y="350" width="900" height="120" rx="10" ry="10" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+  
+  <text x="550" y="380" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1f2937">추천 엔진 사용 사례</text>
+  
+  <rect x="120" y="395" width="280" height="60" rx="8" ry="8" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="135" y="420" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="600" fill="#1f2937">예비 창업자 김OO 님</text>
+  <text x="135" y="440" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#4b5563">"이차전지 관련 기술 특허 보유, 첫 창업"</text>
+  <text x="395" y="425" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#3b82f6">→</text>
+  
+  <rect x="410" y="395" width="280" height="60" rx="8" ry="8" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="425" y="420" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="600" fill="#1f2937">AI 추천 결과</text>
+  <text x="425" y="440" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#4b5563">"울산 그린에너지 인큐베이팅 프로그램"</text>
+  <text x="685" y="425" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#3b82f6">→</text>
+  
+  <rect x="700" y="395" width="280" height="60" rx="8" ry="8" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="715" y="420" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="600" fill="#1f2937">실제 성과</text>
+  <text x="715" y="440" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#4b5563">"현대자동차 협력사 매칭, 시제품 생산 성공"</text>
+  
+  <!-- 워터마크 -->
+  <text x="1080" y="490" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="end" fill="#9ca3af">© 울산 창업 원스톱 디지털 플랫폼</text>
+</svg>

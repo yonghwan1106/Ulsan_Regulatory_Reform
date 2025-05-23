@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="purple-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ddd6fe"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1000" height="500" fill="#f8fafc" rx="10" ry="10"/>
+  
+  <!-- 대시보드 프레임 -->
+  <rect x="50" y="80" width="900" height="400" rx="10" ry="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- 대시보드 헤더 -->
+  <rect x="50" y="80" width="900" height="60" rx="10" ry="10" fill="url(#purple-gradient)" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="500" y="40" font-family="'Noto Sans KR', sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#7c3aed">통합 사후관리 대시보드 UI</text>
+  
+  <!-- 대시보드 제목 및 컨트롤 -->
+  <text x="80" y="120" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="bold" fill="#7c3aed">성장 트래킹 대시보드</text>
+  
+  <rect x="750" y="100" width="180" height="30" rx="15" ry="15" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <text x="770" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#4b5563">기업명: </text>
+  <text x="820" y="120" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="bold" fill="#4b5563">에코에너지(주)</text>
+  
+  <!-- 대시보드 탭 메뉴 -->
+  <rect x="80" y="150" width="120" height="30" rx="5" ry="5" fill="#8b5cf6" stroke="#7c3aed" stroke-width="1"/>
+  <text x="140" y="170" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">성과 지표</text>
+  
+  <rect x="210" y="150" width="120" height="30" rx="5" ry="5" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <text x="270" y="170" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#4b5563">추천 프로그램</text>
+  
+  <rect x="340" y="150" width="120" height="30" rx="5" ry="5" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <text x="400" y="170" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#4b5563">멘토링 일정</text>
+  
+  <rect x="470" y="150" width="120" height="30" rx="5" ry="5" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <text x="530" y="170" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#4b5563">네트워킹</text>
+  
+  <!-- 대시보드 내용 구분선 -->
+  <line x1="80" y1="190" x2="920" y2="190" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- 왼쪽 패널: 주요 지표 -->
+  <rect x="80" y="210" width="350" height="250" rx="8" ry="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="100" y="235" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" fill="#1e293b">주요 성과 지표</text>
+  
+  <!-- 매출 지표 -->
+  <rect x="100" y="250" width="310" height="60" rx="5" ry="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="275" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#1e293b">매출액</text>
+  <text x="120" y="295" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#64748b">전년 대비 32% 증가</text>
+  
+  <!-- 매출 그래프 -->
+  <rect x="240" y="260" width="150" height="40" rx="3" ry="3" fill="#f1f5f9"/>
+  <rect x="250" y="275" width="30" height="15" fill="#bfdbfe"/>
+  <rect x="290" y="270" width="30" height="20" fill="#93c5fd"/>
+  <rect x="330" y="260" width="30" height="30" fill="#3b82f6"/>
+  <text x="250" y="305" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#64748b">2022</text>
+  <text x="290" y="305" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#64748b">2023</text>
+  <text x="330" y="305" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#64748b">2024</text>
+  
+  <!-- 고용 지표 -->
+  <rect x="100" y="320" width="310" height="60" rx="5" ry="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="345" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#1e293b">고용 인원</text>
+  <text x="120" y="365" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#64748b">신규 채용 5명 (총 18명)</text>
+  
+  <!-- 고용 그래프 -->
+  <rect x="240" y="330" width="150" height="40" rx="3" ry="3" fill="#f1f5f9"/>
+  <rect x="250" y="350" width="30" height="10" fill="#bbf7d0"/>
+  <rect x="290" y="345" width="30" height="15" fill="#86efac"/>
+  <rect x="330" y="330" width="30" height="30" fill="#22c55e"/>
+  <text x="250" y="375" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#64748b">2022</text>
+  <text x="290" y="375" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#64748b">2023</text>
+  <text x="330" y="375" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#64748b">2024</text>
+  
+  <!-- 투자 유치 지표 -->
+  <rect x="100" y="390" width="310" height="60" rx="5" ry="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="415" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#1e293b">투자 유치</text>
+  <text x="120" y="435" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#64748b">시리즈 A 15억원 (진행중)</text>
+  
+  <!-- 투자 아이콘 -->
+  <rect x="240" y="405" width="150" height="30" rx="3" ry="3" fill="#f1f5f9"/>
+  <circle cx="280" cy="420" r="12" fill="#c4b5fd"/>
+  <text x="280" y="425" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">A</text>
+  <rect x="300" y="415" width="80" height="10" rx="5" ry="5" fill="#ddd6fe"/>
+  <rect x="300" y="415" width="50" height="10" rx="5" ry="5" fill="#8b5cf6"/>
+  
+  <!-- 오른쪽 패널: 단계별 추천 -->
+  <rect x="450" y="210" width="440" height="250" rx="8" ry="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="470" y="235" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" fill="#1e293b">성장 단계별 추천 프로그램</text>
+  
+  <!-- 현재 단계 표시 -->
+  <rect x="470" y="250" width="400" height="40" rx="5" ry="5" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="490" y="275" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#64748b">현재 단계: </text>
+  <text x="570" y="275" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">성장 초기 (시제품 검증 완료)</text>
+  
+  <!-- 추천 프로그램 1 -->
+  <rect x="470" y="300" width="400" height="60" rx="5" ry="5" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="490" y="325" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">울산 대기업 공동 알앤디 프로그램</text>
+  <text x="490" y="345" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#64748b">현대자동차그룹 이차전지 기술 협력 과제</text>
+  <rect x="800" y="320" width="50" height="25" rx="12" ry="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="1"/>
+  <text x="825" y="335" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">신청</text>
+  
+  <!-- 추천 프로그램 2 -->
+  <rect x="470" y="370" width="400" height="60" rx="5" ry="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="490" y="395" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" fill="#1e293b">울산 그린에너지 액셀러레이팅</text>
+  <text x="490" y="415" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#64748b">성장기업 전용 투자유치 및 판로개척 지원</text>
+  <rect x="800" y="390" width="50" height="25" rx="12" ry="12" fill="#f1f5f9" stroke="#d1d5db" stroke-width="1"/>
+  <text x="825" y="405" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#64748b">신청</text>
+  
+  <!-- 알림 아이콘 -->
+  <circle cx="910" cy="115" r="10" fill="#ef4444"/>
+  <text x="910" y="119" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+  
+  <!-- 워터마크 -->
+  <text x="980" y="490" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="end" fill="#9ca3af">© 울산 창업 원스톱 디지털 플랫폼</text>
+</svg>
