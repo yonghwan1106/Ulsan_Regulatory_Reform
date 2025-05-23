@@ -85,8 +85,8 @@
   <text x="700" y="210" font-family="'Noto Sans KR', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ef4444">기관 간 연계 없음</text>
   
   <!-- 각 중복 서류 제출에 대한 강조 -->
-  <rect x="330" y="270" width="160" height="25" rx="5" ry="5" fill="#fecaca" opacity="0.8" transform="rotate(-20, 330, 270)"/>
-  <text x="330" y="275" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" transform="rotate(-20, 330, 275)">동일 서류 중복 제출 평균 3-4회</text>
+  <rect x="310" y="320" width="160" height="25" rx="5" ry="5" fill="#fecaca" opacity="0.8" transform="rotate(-20, 330, 270)"/>
+  <text x="310" y="325" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="bold" fill="#b91c1c" transform="rotate(-20, 330, 275)">동일 서류 중복 제출 평균 3-4회</text>
   
   <!-- 워터마크 -->
   <text x="950" y="480" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="end" fill="#9ca3af">© 울산 창업 원스톱 디지털 플랫폼</text>
